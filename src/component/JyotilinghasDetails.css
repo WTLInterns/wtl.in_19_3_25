@@ -1,0 +1,71 @@
+.details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.details-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.details-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Description Styling */
+.details-container p {
+  font-size: 1.1rem; /* Adjusts the size */
+  line-height: 1.8; /* Increases the gap between lines */
+  margin: 0 30px; /* Left and right margin */
+  text-align: justify; /* Ensures the text is aligned */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .details-container {
+    padding: 15px;
+  }
+
+  .details-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .details-container p {
+    font-size: 0.9rem; /* Adjust font size for mobile */
+    margin: 0 10px; /* Adjust margin for mobile */
+    line-height: 1.6; /* Adjust line height for mobile */
+  }
+
+  .details-image {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Laptop View */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .details-container {
+    padding: 30px;
+  }
+
+  .details-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .details-container p {
+    font-size: 1rem;
+    margin: 0 30px; /* Adjust margin for laptop */
+    line-height: 1.8; /* Maintain line height for laptop */
+  }
+
+  .details-image {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+}

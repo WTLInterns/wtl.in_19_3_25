@@ -1,0 +1,148 @@
+/* General Home Page Styling */
+.home-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: beige;
+}
+
+.jyotirlingas-info,
+.tour-packages {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: darkblue;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+
+.jyotirlingas-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  
+
+}
+
+.jyotirlinga-item {
+  background-color: darksalmon;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: calc(33.33% - 10px); /* 3 columns for Jyotirlingas */
+  text-align: center;
+  
+}
+
+/* Hover effect */
+.jyotirlinga-item:hover {
+  background-color: red;
+}
+
+.jyotirlinga-item p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.tour-packages {
+  display: flex;
+  flex-direction: column;
+}
+
+.bus-packages, .car-packages {
+  margin-bottom: 30px;
+}
+
+.package-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.package-item {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  width: calc(50% - 10px); /* 2 columns for package info */
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.package-item h4 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.package-item p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Carousel Image Styling */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jyotirlinga-item {
+    width: calc(100% - 10px); /* 2 columns on smaller screens */
+  }
+  
+  .package-item {
+    width: 100%; /* Single column for mobile */
+  }
+  
+  .carousel-inner img {
+    max-height: 250px; /* Smaller height for mobile */
+    
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+  }
+  
+  .jyotirlinga-item p {
+    font-size: 0.9rem;
+  }
+  
+  .package-item h4 {
+    font-size: 1rem;
+  }
+  
+  .package-item p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .jyotirlinga-item {
+    width: 100%; /* Single column for very small screens */
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  .jyotirlinga-item p {
+    font-size: 0.8rem;
+  }
+  
+  .package-item h4 {
+    font-size: 0.9rem;
+  }
+  
+  .package-item p {
+    font-size: 0.7rem;
+  }
+}
+

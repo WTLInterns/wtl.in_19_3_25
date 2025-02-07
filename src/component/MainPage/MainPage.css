@@ -1,0 +1,220 @@
+/* Main Container */
+.Main-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+}
+
+/* Container to make form overlay carousel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Carousel Styles */
+.carousel {
+  width: 100%;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 500px; /* Set a fixed height for uniformity */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images are not stretched */
+  object-position: center;
+}
+
+/* Enquiry Form - Positioned Over Carousel */
+.enquiry-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* Adds blur for readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;  /* Ensure form stays above other elements */
+}
+
+/* Form Styling */
+.enquiry-form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: 600;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: lightgray; /* Blue color for labels */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.3); /* Slightly transparent input fields */
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Center the submit button */
+.enquiry-form button {
+  background: plum;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  width: 100%;  /* Make the button fill the container */
+  text-align: center;  /* Centers the text */
+  margin-top: 20px; 
+  height: 50px;
+}
+
+/* Hover effect for submit button */
+.enquiry-form button:hover {
+  background: purple;
+}
+
+/* Tour Cards Section */
+.tour-cards-container {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-cards-container h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #333;
+}
+
+.tour-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tour-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  height: 350px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.tour-card:hover {
+  transform: scale(1.05);
+}
+
+.tour-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tour-card h3 {
+  font-size: 1.4em;
+  margin-top: 15px;
+  color: #333;
+}
+
+.tour-card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.tour-card button {
+  background-color: #f90;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.tour-card button:hover {
+  background-color: #e77f00;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+  /* Ensure form remains within carousel */
+  .enquiry-form-container {
+    width: 85%;  /* Make form a bit smaller on mobile */
+    max-width: 90%; /* Allow for more flexibility */
+    padding: 15px;
+  }
+
+  /* Input fields will stack vertically */
+  .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-group label {
+    font-size: 0.9em;  /* Slightly smaller font size */
+  }
+
+  .input-group input {
+    font-size: 0.9em;  /* Slightly smaller font size */
+    padding: 8px;  /* Reduced padding */
+  }
+
+  .enquiry-form button {
+    height: 45px;  /* Smaller button size */
+    font-size: 1em;  /* Smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Form should still stay fixed on the carousel image */
+  .enquiry-form-container {
+    width: 90%;  /* More width on very small screens */
+    padding: 10px;
+  }
+
+  /* Make inputs smaller */
+  .input-group input {
+    padding: 6px;
+  }
+
+  .enquiry-form button {
+    height: 40px;
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,56 @@
+/* Floating WhatsApp and Contact buttons */
+.floating-buttons-container {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Initial left position */
+    right: 20px; /* Initial right position */
+    z-index: 9999; /* Ensure buttons are above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.floating-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.floating-button.whatsapp {
+    background-color: #25d366; /* WhatsApp green */
+}
+
+.floating-button.contact {
+    background-color: #007bff; /* Blue for contact button */
+}
+
+.floating-button:hover {
+    transform: scale(1.1);
+}
+
+.floating-button .icon {
+    font-size: 30px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .floating-button {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .floating-buttons-container {
+        left: 10px;
+        right: 10px;
+    }
+}
