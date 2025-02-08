@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { useParams } from "react-router-dom";
 import "./JyotilinghasDetails.css";
@@ -69,18 +70,30 @@ const jyotirlingaInfo = {
 };
 
 const JyotilingasDetails = () => {
-  const { name } = useParams(); // Get the name from URL params
+  const { name } = useParams(); // Get the Jyotirlinga name from URL params
 
-  // Find the info for the Jyotirlinga based on the 'name' from the URL
-  const info = jyotirlingaInfo[name] || { description: "Information not available.", image: somnath }; // Default to Somnath if name not found
+  // Normalize name (handle extra spaces or case issues)
+  const formattedName = name?.trim();
+
+  // Get information based on name
+  const info = jyotirlingaInfo[formattedName] || {
+    description: "Information not available.",
+    image: somnath, // Default image
+  };
+
+  // Debugging logs (Check console if facing issues)
+  console.log("URL Param:", name);
+  console.log("Formatted Name:", formattedName);
+  console.log("Info Object:", info);
 
   return (
     <div className="details-container">
-      <h2>{name}</h2>
-      <img src={info.image} alt={name} className="details-image" />
+      <img src={info.image} alt={formattedName} className="details-image" />
+      <h2>{formattedName}</h2>
       <p>{info.description}</p>
     </div>
   );
 };
 
 export default JyotilingasDetails;
+

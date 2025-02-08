@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+  background-color: beige;
+
 }
 
 .details-container h2 {
@@ -24,6 +26,7 @@
   margin: 0 30px; /* Left and right margin */
   text-align: justify; /* Ensures the text is aligned */
   font-family: 'Arial', sans-serif;
+  color: #000;
 }
 
 /* Mobile View */

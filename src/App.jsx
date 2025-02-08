@@ -10,15 +10,12 @@ import NavBar from "./component/NavBar";
 import Footer from "./component/Footer";
 import MainPage from "./component/MainPage/MainPage";
 import WhatsappContact from "./component/Floating/WhatsappContact";
-
-// New components for the tour pages
-// import Goa from "./component/Goa"; 
-// import Kokan from "./component/Kokan";
-// import Mahabaleshwar from "./component/Mahabaleshwar";
-// import KumbhMela from "./component/KumbhMela";
-// import Ashtavinayak from "./component/Ashtavinayak"; 
-// import Lonavala from "./component/Lonavala"; 
-// import Kerala from "./component/Kerala"; 
+import KokanDetails from "../src/component/KokanDetails"
+import GoaTour from "../src/component/GoaTour";
+import Ashtavinayak from "./component/Ashtavinayak";
+ import KeralaTours from "./component/KeralaTours";
+ import MahabaleshwarPackages from "./component/MahabaleshwarPackages";
+ import MahakumbhJourney from "./component/MahakumbhJourney";
 
 const App = () => {
   return (
@@ -34,15 +31,12 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/jyotirlinga/:name" element={<JyotilingasDetails />} />
           <Route path="/jyotirlinga-form" element={<JyotirlingaForm />} />
-
-          {/* Routes for new tours */}
-          {/* <Route path="/goa" element={<Goa />} />
-          <Route path="/kokan" element={<Kokan />} />
-          <Route path="/mahabaleshwar" element={<Mahabaleshwar />} />
-          <Route path="/kumbh-mela" element={<KumbhMela />} />
-          <Route path="/ashtavinayak" element={<Ashtavinayak />} />
-          <Route path="/lonavala" element={<Lonavala />} />
-          <Route path="/keral" element={<Kerala />} /> */}
+          <Route path="/goa" element={<GoaTour />} />
+          <Route path="/ashtavinayak" element={<Ashtavinayak/>} />
+          <Route path="/kokan" element={<KokanDetails />} /> 
+          <Route path="/mahabaleshwar" element={< MahabaleshwarPackages/>} /> 
+          <Route path="/kumbhmela" element={<MahakumbhJourney/>} />
+          <Route path="/keral" element={<KeralaTours/>} />
         </Routes>
 
         {/* Floating Buttons are visible across all pages */}
