@@ -1,5 +1,5 @@
 import "./MahakumbhJourney.css";
-import img12 from "/src/assets/Images/Mahakumb.webp"; // ✅ Import the image
+import img12 from "/src/assets/Images/Mahakumb.png"; // ✅ Import the image
 import {useNavigate} from "react-router-dom";
 
 export default function MahakumbhJourney() {
@@ -11,7 +11,7 @@ export default function MahakumbhJourney() {
       description: "Experience the divine energy of Mahakumbh with holy dips and rituals.",
       price: "₹18,999 per person",
       inclusions: ["3 Nights Stay", "Ganga Aarti Experience", "Local Temple Tour"],
-      image: "/src/assets/Images/mahakumbh2.webp",
+      image: "/src/assets/Images/mahakumbh2.png",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ export default function MahakumbhJourney() {
       description: "Witness the grandeur of the world's largest spiritual gathering.",
       price: "₹24,999 per person",
       inclusions: ["4 Nights Stay", "VIP Darshan Pass", "Daily Guided Rituals"],
-      image: "/src/assets/Images/mahakumbh3.webp",
+      image: "/src/assets/Images/mahakumbh3.png",
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ export default function MahakumbhJourney() {
       description: "Explore the cultural and spiritual significance of Mahakumbh.",
       price: "₹20,750 per person",
       inclusions: ["3 Nights Stay", "City Heritage Tour", "River Cruise"],
-      image: "/src/assets/Images/mahakumbh4.webp",
+      image: "/src/assets/Images/mahakumbh4.png",
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ export default function MahakumbhJourney() {
       description: "Immerse yourself in sacred rituals and divine blessings.",
       price: "₹27,500 per couple",
       inclusions: ["3 Nights Stay", "Spiritual Guru Session", "Traditional Prasadam Meals"],
-      image: "/src/assets/Images/mahakumbh2.webp",
+      image: "/src/assets/Images/mahakumbh2.png",
     },
   ];
   

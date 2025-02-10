@@ -6,9 +6,9 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "./TourismCarousel.css";
 
 // Import images
-import Ganpatipule from "../assets/kokan/ganpatipule.avif";
-import Alibaug from "../assets/kokan/Alibaug.avif";
-import Ratnagiri from "../assets/kokan/Ratnagiri.avif";
+import Ganpatipule from "../assets/kokan/ganpatipule.png";
+import Alibaug from "../assets/kokan/Alibaug.png";
+import Ratnagiri from "../assets/kokan/Ratnagiri.png";
 import ambazariLake from "../assets/kokan/kokan1.jpg";
 
 const places = [

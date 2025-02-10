@@ -4,12 +4,12 @@ import React from "react";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import jyotirlingaImage from "../assets/Images/jyotirlinga_image.webp";
+import jyotirlingaImage from "../assets/Images/jyotirlinga_image.png";
 import jyotirlingaImage2 from "../assets/Images/Jyotirling2.jpeg";
 import jyotirlingaImage3 from "../assets/Images/Rumi Gate.jpeg";
 import jyotirlingaImage4 from "../assets/Images/jyotirling1.jpeg";
 import leaf from "../assets/Images/leaf2.png";
-import jyotilinghasImg from "../assets/Images/wtlJyotilinghas.webp"
+import jyotilinghasImg from "../assets/Images/wtlJyotilinghas.png"
 const Home = () => {
   const navigate = useNavigate();
 

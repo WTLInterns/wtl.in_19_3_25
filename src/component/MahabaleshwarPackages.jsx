@@ -12,7 +12,7 @@ const tourPackages = [
     price: "₹16,254 per person",
     inclusions: ["3 Nights Stay", "Daily Breakfast", "Sightseeing Tour"],
     duration: "2 Days / 1 Night",
-    image: "/src/assets/Images/MahabaleshwarDelight.avif",
+    image: "/src/assets/Images/MahabaleshwarDelight.png",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const tourPackages = [
     price: "₹18,750 per person",
     inclusions: ["3 Nights Stay", "Family Activities", "Airport Transfers"],
     duration: "2 Days / 1 Night",
-    image: "/src/assets/Images/MahabaleshwarFamily.avif",
+    image: "/src/assets/Images/MahabaleshwarFamily.png",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const tourPackages = [
     price: "₹22,000 per couple",
     inclusions: ["3 Nights Stay", "Romantic Dinner", "Private Sightseeing"],
     duration: "2 Days / 1 Night",
-    image: "/src/assets/Images/MahabaleshwarRomantic.avif",
+    image: "/src/assets/Images/MahabaleshwarRomantic.png",
   },
 ];
 

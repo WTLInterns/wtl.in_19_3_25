@@ -22,18 +22,6 @@ const Footer = () => {
             <li>
               <a href="/about">About Us</a>
             </li>
-            <li>
-              <a href="/services">Our Services</a>
-            </li>
-            <li>
-              <a href="/projects">Projects</a>
-            </li>
-            <li>
-              <a href="/blog">Blog</a>
-            </li>
-            <li>
-              <a href="/careers">Careers</a>
-            </li>
           </ul>
         </div>
 
@@ -41,19 +29,7 @@ const Footer = () => {
           <span className="section-title">Quick Links</span>
           <ul className="animated-list">
             <li>
-              <a href="/faq">FAQ</a>
-            </li>
-            <li>
-              <a href="/terms">Terms of Service</a>
-            </li>
-            <li>
-              <a href="/privacy">Privacy Policy</a>
-            </li>
-            <li>
               <a href="/contact">Contact Us</a>
-            </li>
-            <li>
-              <a href="/sitemap">Sitemap</a>
             </li>
           </ul>
         </div>

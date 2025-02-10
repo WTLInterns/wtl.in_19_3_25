@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./JyotirlingaForm.css";
-import jyotirlingaImage from "../assets/Images/jyotirlinga_image.webp"; 
+import jyotirlingaImage from "../assets/Images/jyotirlinga_image.png"; 
 import leaf from "../assets/Images/leaf2.png";
 
 const JyotirlingaForm = () => {

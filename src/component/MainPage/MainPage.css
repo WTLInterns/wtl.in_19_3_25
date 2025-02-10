@@ -11,10 +11,12 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  max-width: 1920p;
+  max-width: 100vw; /* Prevent horizontal overflow */
   padding-top: 60px;
-  margin: 0 auto;
+  margin: 0 ;
+  overflow: hidden; /* Prevents unwanted scrolling */
 }
+
 
 /* Carousel Styles */
 .carousel {
@@ -23,15 +25,17 @@
 
 .carousel-inner {
   width: 100%;
-  height: 500px; /* Set a fixed height for uniformity */
+  height: 800px; /* Set a fixed height for uniformity */
 }
 
 .carousel-item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images are not stretched */
+  height: auto;
+  object-fit: cover;
   object-position: center;
+  max-width: 100vw; /* Prevents image from overflowing */
 }
+
 
 /* Enquiry Form - Positioned Over Carousel */
 .enquiry-form-container {
@@ -52,8 +56,9 @@
 .enquiry-form h2 {
   text-align: center;
   margin-bottom: 15px;
+  display: flex;
   color: white;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .input-group {
@@ -174,42 +179,96 @@
 
 /* Mobile responsive styling */
 @media (max-width: 768px) {
-  /* Ensure form remains within carousel */
+ 
+  html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  .carousel-inner, .enquiry-form-container {
+    min-height: 100vh; /* Ensure full-screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+   
+
+  }
+
+  /* Make images responsive */
+  .carousel-item img {
+    width: 100% !important; /* Ensures image stays within screen */
+    height: 100vh; /* Ensures full-screen height */
+    max-width: 100%;
+    margin-left:-20px;
+    margin-left: 50px;
+  }
+
+  /* Form styling adjustments */
   .enquiry-form-container {
-    width: 85%;  /* Make form a bit smaller on mobile */
-    max-width: 90%; /* Allow for more flexibility */
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.4); /* Slight transparency */
+    backdrop-filter: blur(1px);
     padding: 15px;
-  }
-
-  /* Input fields will stack vertically */
-  .input-group {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .input-group label {
-    font-size: 0.9em;  /* Slightly smaller font size */
+    
   }
 
   .input-group input {
-    font-size: 0.9em;  /* Slightly smaller font size */
-    padding: 8px;  /* Reduced padding */
+    padding: 10px;
+    font-size: 1em;
   }
 
   .enquiry-form button {
-    height: 45px;  /* Smaller button size */
-    font-size: 1em;  /* Smaller font size */
+    font-size: 1em;
+    height: 50px;
   }
 }
 
+
 @media (max-width: 480px) {
-  /* Form should still stay fixed on the carousel image */
-  .enquiry-form-container {
-    width: 90%;  /* More width on very small screens */
-    padding: 10px;
+  /* Ensure Background is Visible */
+  .carousel-container {
+    width: 100%;
+  }
+  /* .Main-container{
+    width: 100%;
+  } */
+  .carousel-inner {
+    height: 100vh !important;
+    min-height: 400px;
+    min-width: 700px;
+    
   }
 
-  /* Make inputs smaller */
+  .carousel-item img {
+    /* height: 100% !important; */
+    min-height: 700px;
+    width: 100% ;
+    min-width: 600px;
+   
+    margin-left:-420px;
+    display: block !important;
+  }
+  .enquiry-form h2{
+    color: #463f3f;
+    align-items: left;
+    font-size: 30px;
+  }
+
+  /* Form Adjustments */
+  .enquiry-form-container {
+    align-items: center;
+    width: 500px;
+    left: 250px;
+    top: 300px;
+    /* padding: 10px; */
+    height: auto;
+    background: rgba(255, 255, 255, 0.4);
+  }
+
   .input-group input {
     padding: 6px;
   }

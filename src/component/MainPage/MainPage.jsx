@@ -5,13 +5,13 @@ import { useNavigate } from "react-router-dom";
 
 import slide1 from "/src/assets/Images/kumbh.jpg";
 import slide2 from "/src/assets/Images/Ashtavinayak1.jpg";
-import slide3 from "/src/assets/Images/Main1.webp";
-import slide4 from "/src/assets/Images/Goa.webp";
-import slide5 from "/src/assets/Images/Kokan.webp";
-import slide6 from "/src/assets/Images/jyotirlinga_image.webp";
-import slide7 from "/src/assets/Images/mahabaleshwar.webp";
-import slide8 from "/src/assets/Images/lonavala.webp";
-import slide9 from "/src/assets/Images/kerala.webp";
+import slide3 from "/src/assets/Images/Main1.png";
+import slide4 from "/src/assets/Images/Goa.png";
+import slide5 from "/src/assets/Images/Kokan.png";
+import slide6 from "/src/assets/Images/jyotirlinga_image.png";
+import slide7 from "/src/assets/Images/mahabaleshwar.png";
+import slide8 from "/src/assets/Images/lonavala.png";
+import slide9 from "/src/assets/Images/kerala.png";
 
 
 // Enquiry Form Component

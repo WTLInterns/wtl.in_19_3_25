@@ -5,10 +5,10 @@ import KokanCarousel from "./KokanCarousel";
 import TourismCarousel from "./TourismCarousel"; // Import the missing component
 
 // Import images properly
-import kokan1 from "../assets/kokan/Ratnagi The Port Town.webp";
-import kokan5 from "../assets/kokan/Sindhudurg.webp";
-import kokan3 from "../assets/kokan/Dapoli.webp";
-import kokan4 from "../assets/kokan/Ganpatipule.webp";
+import kokan1 from "../assets/kokan/Ratnagi The Port Town.png";
+import kokan5 from "../assets/kokan/Sindhudurg.png";
+import kokan3 from "../assets/kokan/Dapoli.png";
+import kokan4 from "../assets/kokan/Ganpatipule.png";
 import Experiences from "./Experiences";
 
 const tourPackages = [

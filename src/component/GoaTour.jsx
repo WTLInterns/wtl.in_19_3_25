@@ -18,21 +18,21 @@ const tourPackages = [
     title: "Goa Fun Retreat",
     description: "Goa Fun Retreat is the perfect family getaway, offering a mix of relaxation and adventure. Enjoy pristine beaches, exciting water sports, scenic nature trails..",
 
-    image: "/src/assets/Images/goa4.avif"
+    image: "/src/assets/Images/goa4.png"
   },
   {
     id: 2,
     title: "Romantic Rendezvous",
     description: "Romantic Rendezvous Retreat is the ultimate escape for couples seeking love and relaxation. ",
 
-    image: "/src/assets/Images/goa5.avif"
+    image: "/src/assets/Images/goa5.png"
   },
   {
     id: 3,
     title: "Goa Getaway Bonanza",
     description: "Enjoy a relaxing family trip with comfortable stays and activities.",
 
-    image: "/src/assets/Images/goa6.avif"
+    image: "/src/assets/Images/goa6.png"
   },
   {
     id: 4,

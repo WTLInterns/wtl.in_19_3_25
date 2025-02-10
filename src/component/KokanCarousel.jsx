@@ -7,7 +7,7 @@ import "./KokanCarousel.css";
 // Import images properly
 import kokan1 from "../assets/kokan/kokan1.jpg";
 import kokan3 from "../assets/kokan/kokan3.jpg";
-import kokan6 from "../assets/kokan/kokan6.avif";
+import kokan6 from "../assets/kokan/kokan6.png";
 
 const carouselData = [
   {

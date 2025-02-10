@@ -4,11 +4,11 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
  import "./LonavalaTour.css"
 
-import img12 from "../assets/Images/lonavala1.webp"
-import lonavala2 from "../assets/Images/lonavala2.webp"
-import lonavala3 from "../assets/Images/lonavala3.webp"
-import lonavala4 from "../assets/Images/lonavala4.webp"
-import lonavala5 from "../assets/Images/lonavala5.webp"
+import img12 from "../assets/Images/lonavala1.png"
+import lonavala2 from "../assets/Images/lonavala2.png"
+import lonavala3 from "../assets/Images/lonavala3.png"
+import lonavala4 from "../assets/Images/lonavala4.png"
+import lonavala5 from "../assets/Images/lonavala5.png"
 
 const LonavalaTour = () => {
   const navigate = useNavigate()
