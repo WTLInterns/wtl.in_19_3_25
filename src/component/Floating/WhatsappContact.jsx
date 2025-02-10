@@ -4,7 +4,7 @@ import './WhatsappContact.css'; // Include the CSS file
 
 const WhatsappContact = () => {
   const whatsappMessage = "Hello, I would like to inquire about the tour."; // Customize your message
-  const phoneNumber = "9145730054"; // Replace with your contact number
+  const phoneNumber = "9730545491"; // Replace with your contact number
   
   // WhatsApp link
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;

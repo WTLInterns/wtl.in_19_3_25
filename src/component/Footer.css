@@ -5,7 +5,7 @@
   --footer-link-hover: #6a1b9a;
   --footer-border: #34495e;
   --animation-speed: 0.3s;
-  --section-title-color: #6a1b9a ;
+  --section-title-color: #6a1b9a;
 }
 
 @keyframes fadeIn {
@@ -19,28 +19,16 @@
   }
 }
 
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
 .footer {
   background-color: var(--footer-bg);
   color: var(--footer-text);
-  padding: 3rem 0 1rem;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  padding: 2rem 0 0.5rem; /* Reduced padding */
+  font-size: 0.8rem; /* Reduced font size */
+  line-height: 1.4;
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -50,8 +38,8 @@
 
 .footer-section {
   flex: 1;
-  min-width: 200px;
-  margin-bottom: 2rem;
+  min-width: 180px; /* Reduced min-width */
+  margin-bottom: 1.5rem; /* Reduced margin */
   animation: fadeIn 0.5s ease-out;
 }
 
@@ -60,9 +48,9 @@
 }
 
 .company-logo {
-  max-width: 150px;
+  max-width: 120px; /* Reduced logo size */
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   transition: transform var(--animation-speed) ease;
 }
 
@@ -71,20 +59,19 @@
 }
 
 .company-description {
-  margin-bottom: 1rem;
-  max-width: 300px;
-  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  max-width: 280px; /* Slightly reduced max-width */
+  line-height: 1.5;
 }
 
+/* Section Title */
 .section-title {
   display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px #ffff ;
+  font-size: 1rem; /* Reduced font size */
+  margin-bottom: 0.8rem; /* Reduced spacing */
   color: var(--section-title-color);
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
 }
 
 .section-title::after {
@@ -92,14 +79,14 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 30px;
+  width: 25px;
   height: 2px;
   background-color: var(--section-title-color);
   transition: width var(--animation-speed) ease;
 }
 
 .footer-section:hover .section-title::after {
-  width: 50px;
+  width: 40px;
 }
 
 .animated-list {
@@ -108,12 +95,12 @@
 }
 
 .animated-list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem; /* Reduced margin */
   transition: transform var(--animation-speed) ease;
 }
 
 .animated-list li:hover {
-  transform: translateX(5px);
+  transform: translateX(3px);
 }
 
 .footer-section a {
@@ -121,6 +108,7 @@
   text-decoration: none;
   transition: color var(--animation-speed) ease;
   position: relative;
+  font-weight: normal; /* Removed bold */
 }
 
 .footer-section a::after {
@@ -148,52 +136,55 @@
 .contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .contact-item i {
-  margin-right: 0.5rem;
-  font-size: 1.1rem;
+  margin-right: 0.4rem;
+  font-size: 1rem; /* Reduced icon size */
   transition: transform var(--animation-speed) ease;
 }
 
 .contact-item:hover i {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
+/* Footer Bottom */
 .footer-bottom {
-  margin-top: 2rem;
-  padding-top: 1rem;
+  margin-top: 1.5rem; /* Reduced margin */
+  padding-top: 0.8rem; /* Reduced padding */
   border-top: 1px solid var(--footer-border);
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  font-size: 0.75rem; /* Reduced font size */
 }
 
 .social-icons {
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .social-icon {
   color: var(--footer-link);
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* Slightly smaller icons */
   transition: color var(--animation-speed) ease, transform var(--animation-speed) ease;
 }
 
 .social-icon:hover {
   color: var(--footer-link-hover);
-  animation: float 2s ease-in-out infinite;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
+    text-align: center;
   }
 
   .footer-section {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem; /* Further reduced spacing */
   }
 
   .footer-bottom {
@@ -202,8 +193,7 @@
   }
 
   .social-icons {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     justify-content: center;
   }
 }
-

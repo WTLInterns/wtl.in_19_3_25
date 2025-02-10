@@ -16,6 +16,7 @@ import Ashtavinayak from "./component/Ashtavinayak";
  import KeralaTours from "./component/KeralaTours";
  import MahabaleshwarPackages from "./component/MahabaleshwarPackages";
  import MahakumbhJourney from "./component/MahakumbhJourney";
+ import LonavalaTour from "./component/LonavalaTour";
 
 const App = () => {
   return (
@@ -35,8 +36,10 @@ const App = () => {
           <Route path="/ashtavinayak" element={<Ashtavinayak/>} />
           <Route path="/kokan" element={<KokanDetails />} /> 
           <Route path="/mahabaleshwar" element={< MahabaleshwarPackages/>} /> 
-          <Route path="/kumbhmela" element={<MahakumbhJourney/>} />
+          <Route path="/kumbh-mela" element={<MahakumbhJourney/>} />
           <Route path="/keral" element={<KeralaTours/>} />
+          <Route path="/lonavala" element={<LonavalaTour/>} />
+
         </Routes>
 
         {/* Floating Buttons are visible across all pages */}

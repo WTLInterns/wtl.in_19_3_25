@@ -12,7 +12,7 @@ const keralaPackages = [
     description: "Enjoy houseboat cruises, lush greenery, and serene backwaters.",
     price: "₹18,999 per person",
     inclusions: ["4 Nights Stay", "Houseboat Ride", "Daily Breakfast"],
-    image: "/src/assets/Images/Kerala_ India's Enchanting Land of Waterways - Copy.jpeg"
+    image: "/src/assets/Images/KeralaEscape.avif"
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const keralaPackages = [
     description: "Ideal for couples with luxury stays and stunning views.",
     price: "₹25,000 per couple",
     inclusions: ["3 Nights Stay", "Candlelight Dinner", "Beach Walks"],
-    image: "/src/assets/Images/RomanticKeralaGetaway.jpg"
+    image: "/src/assets/Images/KeralaRomantic.avif"
   },
   {
     id: 4,
@@ -41,10 +41,10 @@ const keralaPackages = [
 ];
 
 const images = [
-  { src: "/src/assets/Images/Kerala_ India's Enchanting Land of Waterways - Copy.jpeg", alt: keralaPackages[0].title },
-  { src: "/src/assets/Images/kerala.webp", alt: keralaPackages[1].title },
-  { src: "/src/assets/Images/RomanticKeralaGetaway.jpg", alt: keralaPackages[2].title },
-  { src: "/src/assets/Images/KeralaWildlifeAdventure.avif", alt: keralaPackages[3].title }
+  { src: keralaPackages[0].image, alt: keralaPackages[0].title },
+  { src: keralaPackages[1].image, alt: keralaPackages[1].title },
+  { src: keralaPackages[2].image, alt: keralaPackages[2].title },
+  { src: keralaPackages[3].image  , alt: keralaPackages[3].title }
 ];
 
 
@@ -65,14 +65,14 @@ const KeralaTours = () => {
           showArrows={true}
           autoPlay={true}
           infiniteLoop={true}
-          interval={3000}
+          interval={1000}
           showThumbs={false}
           showStatus={false}
         >
           {images.map((image, index) => (
             <div key={index} className="carousel-slide">
               <img src={image.src} alt={image.alt} className="carousel-image" />
-              <p className="legend">{image.alt}</p>
+              {/* <p className="legend">{image.alt}</p> */}
             </div>
           ))}
         </Carousel>

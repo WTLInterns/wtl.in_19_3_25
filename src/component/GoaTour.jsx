@@ -68,7 +68,7 @@ function GoaTour() {
         autoPlay={true}
         showStatus={false}
         dynamicHeight={false}
-        interval={3000}
+        interval={1000}
         transitionTime={1000}
       >
         {images.map((URL, index) => (

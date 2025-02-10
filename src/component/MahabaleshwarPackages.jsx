@@ -12,7 +12,7 @@ const tourPackages = [
     price: "₹16,254 per person",
     inclusions: ["3 Nights Stay", "Daily Breakfast", "Sightseeing Tour"],
     duration: "2 Days / 1 Night",
-    image: "/src/assets/Images/mahabaleshwardelight.jpg",
+    image: "/src/assets/Images/MahabaleshwarDelight.avif",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const tourPackages = [
     price: "₹18,750 per person",
     inclusions: ["3 Nights Stay", "Family Activities", "Airport Transfers"],
     duration: "2 Days / 1 Night",
-    image: "/src/assets/Images/Family-Friendly-Activities-In-Mahabaleshwar.avif",
+    image: "/src/assets/Images/MahabaleshwarFamily.avif",
   },
   {
     id: 4,
@@ -39,16 +39,16 @@ const tourPackages = [
     price: "₹22,000 per couple",
     inclusions: ["3 Nights Stay", "Romantic Dinner", "Private Sightseeing"],
     duration: "2 Days / 1 Night",
-    image: "/src/assets/Images/RomanticMahabaleshwarEscape.jpg",
+    image: "/src/assets/Images/MahabaleshwarRomantic.avif",
   },
 ];
 
 // Carousel Images
 const images = [
-  { src: "/src/assets/Images/mahabaleshwardelight.jpg", alt: "Mahabaleshwar Delight" },
-  { src: "/src/assets/Images/ScenicMahabaleshwarGetaway.jpg", alt: "Scenic Mahabaleshwar Getaway" },
-  { src: "/src/assets/Images/Family-Friendly-Activities-In-Mahabaleshwar.avif", alt: "Family Fun in Mahabaleshwar" },
-  { src: "/src/assets/Images/RomanticMahabaleshwarEscape.jpg", alt: "Romantic Mahabaleshwar Escape" },
+  { src: tourPackages[0].image, alt: tourPackages[0].title },
+  { src: tourPackages[1].image, alt: tourPackages[1].title },
+  { src: tourPackages[2].image ,alt: tourPackages[2].title },
+  { src: tourPackages[3].image, alt: tourPackages[3].title},
 ];
 
 const MahabaleshwarPackages = () => {
@@ -64,11 +64,11 @@ const MahabaleshwarPackages = () => {
 
       {/* Carousel */}
       <div className="carousel-container">
-        <Carousel showArrows autoPlay infiniteLoop interval={3000} showThumbs={false} showStatus={false}>
+        <Carousel showArrows autoPlay infiniteLoop interval={1000} showThumbs={false} showStatus={false}>
           {images.map((image, index) => (
             <div key={index} className="carousel-slide">
               <img src={image.src} alt={image.alt} className="carousel-image" />
-              <p className="legend">{image.alt}</p>
+              {/* <p className="legend">{image.alt}</p> */}
             </div>
           ))}
         </Carousel>

@@ -39,7 +39,7 @@ const EnquiryForm = () => {
     🔹 Return Date: ${returnDate}%0A
     🔹 People: ${people}`;
 
-    const phoneNumber = "9145730054"; 
+    const phoneNumber = "9730545491"; 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappURL, "_blank");
   };
@@ -90,7 +90,7 @@ const MainPage = () => {
     <div className="Main-container">
       <div className="carousel-container">
         {/* Carousel */}
-        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-interval="2000">
+        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-interval="1000">
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img className="d-block w-100" src={slide1} alt="First slide" />
@@ -193,7 +193,7 @@ const MainPage = () => {
             <img src={slide9} alt="Kerala" />
             <h3>Kerala Tour</h3>
             <p>Experience the backwaters, beaches, and cultural heritage of Kerala.</p>
-            <button onClick={() => navigate("/kerala")}>Learn More</button>
+            <button onClick={() => navigate("/keral")}>Learn More</button>
           </div>
 
           {/* Lonavala Tour Card */}

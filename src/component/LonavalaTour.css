@@ -195,7 +195,275 @@
     align-items: center;
   }
   
-  .lonavala-tour .lonavala-book-button:hover {
+  .lonaval/* Lonavala Tour Specific Styles */
+.lonavala-tour {
+  --lt-primary-color: #007bff;
+  --lt-secondary-color: #6c757d;
+  --lt-accent-color: #28a745;
+  --lt-background-color: #f8f9fa;
+  --lt-text-color: #333;
+  --lt-white: #000000;
+
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: var(--lt-text-color);
+  background-color: var(--lt-background-color);
+}
+
+.lonavala-tour .lonavala-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.lonavala-tour .lonavala-hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.lonavala-tour .lonavala-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lonavala-tour .lonavala-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--lt-white);
+  text-align: center;
+  padding: 20px;
+}
+
+.lonavala-tour .lonavala-hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.lonavala-tour .lonavala-hero-subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.lonavala-tour .lonavala-cta-button {
+  background-color: var(--lt-accent-color);
+  color: var(--lt-white);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.lonavala-tour .lonavala-cta-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.lonavala-tour .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: var(--lt-primary-color);
+}
+
+.lonavala-tour .lonavala-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.lonavala-tour .lonavala-info-item {
+  background: var(--lt-white);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lonavala-tour .lonavala-info-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lonavala-tour .lonavala-info-item h3 {
+  margin-bottom: 15px;
+  color: var(--lt-primary-color);
+  font-size: 1.4rem;
+}
+
+.lonavala-tour .lonavala-packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.lonavala-tour .lonavala-package-card {
+  background: var(--lt-white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.lonavala-tour .lonavala-package-card:hover,
+.lonavala-tour .lonavala-package-card.active {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.lonavala-tour .lonavala-package-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.lonavala-tour .lonavala-package-content {
+  padding: 25px;
+}
+
+.lonavala-tour .lonavala-package-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: var(--lt-primary-color);
+}
+
+.lonavala-tour .lonavala-package-description {
+  margin-bottom: 15px;
+  color: var(--lt-secondary-color);
+}
+
+.lonavala-tour .lonavala-package-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.lonavala-tour .lonavala-package-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--lt-accent-color);
+}
+
+.lonavala-tour .lonavala-package-price span {
+  font-size: 0.9rem;
+  color: var(--lt-secondary-color);
+}
+
+.lonavala-tour .lonavala-package-inclusions {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.lonavala-tour .lonavala-package-inclusions li {
+  margin-bottom: 8px;
+}
+
+.lonavala-tour .lonavala-book-button {
+  background-color: var(--lt-primary-color);
+  color: var(--lt-white);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lonavala-tour .lonavala-book-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.lonavala-tour .inline-icon {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .lonavala-tour .lonavala-hero {
+    height: 50vh;
+  }
+
+  .lonavala-tour .lonavala-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .lonavala-tour .lonavala-hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .lonavala-tour .section-title {
+    font-size: 2rem;
+  }
+
+  .lonavala-tour .lonavala-info-grid {
+    gap: 20px;
+  }
+
+  .lonavala-tour .lonavala-packages-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .lonavala-tour .lonavala-hero {
+    height: 40vh;
+  }
+
+  .lonavala-tour .lonavala-hero-title {
+    font-size: 2rem;
+  }
+
+  .lonavala-tour .lonavala-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .lonavala-tour .section-title {
+    font-size: 1.75rem;
+  }
+
+  .lonavala-tour .lonavala-package-title {
+    font-size: 1.4rem;
+  }
+
+  .lonavala-tour .lonavala-package-price {
+    font-size: 1.2rem;
+  }
+
+  .lonavala-tour .lonavala-package-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lonavala-tour .lonavala-package-details p {
+    margin-bottom: 5px;
+  }
+}
+
+a-tour .lonavala-book-button:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
   }

@@ -1,140 +1,139 @@
 /* General Styles */
-/* Page Background */
-body {
-  background: url('your-image-url-here.jpg') no-repeat center center fixed; /* Add your background image URL */
-  background-size: cover; /* Make the background image cover the whole screen */
-  font-family: 'Arial', sans-serif;
+body, html {
   margin: 0;
   padding: 0;
-  /* display: flex; */
-  justify-content: center;
-  align-items: flex-start; /* Align the content from the top */
-  min-height: 100vh;
-  color: white;
-  padding-top: 60px; /* Adjust this value based on your navbar height */
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  background: white;
+  height: 100%;
 }
 
-/* Form container to give space below navbar */
-.contact-container {
-  max-width: 100%;
-  margin: 20px auto;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.7); /* Transparent form background */
-  border-radius: 12px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+/* Page Layout */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Allow full page height */
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background: #f8f9fa;
+  padding: 15px 0;
   text-align: center;
-  backdrop-filter: blur(10px); /* Adds a slight blur effect behind the form */
-  margin-top: 60px; /* Make sure the form is not behind the navbar */
-  
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
+/* Contact Form Container */
+.contact-container {
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 50px auto; /* Adjust spacing */
+  flex-grow: 1; /* Push footer down */
+}
 
 /* Title Styling */
 .contact-title {
   font-size: 28px;
-  font-weight: bold;
-  color: #222;
+  font-weight: 600;
   margin-bottom: 20px;
+  color: #222;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
 }
 
 /* Form Styling */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 /* Form Group */
 .form-group {
   text-align: left;
+  position: relative;
 }
 
+/* Label Styling */
 .form-group label {
-  font-weight: bold;
+  font-weight: 500;
   color: #333;
   margin-bottom: 5px;
   display: block;
 }
 
-/* Align two fields in one line */
-.form-group-inline {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.form-group-inline input {
-  width: 48%; /* Set width of fields to 48% */
-}
-
-.form-group-inline textarea {
-  width: 100%;
-}
-
-/* Input and Textarea Styles */
+/* Input Fields */
 .form-group input,
 .form-group textarea {
+  width: 100%;
   padding: 12px;
   border: 2px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
+  background: #f9f9f9;
+  color: #333;
   transition: 0.3s ease-in-out;
-  width: 100%; /* Make sure these fields take up 100% of their container width */
-  background: rgba(255, 255, 255, 0.8); /* Transparent input fields */
 }
 
+/* Input Focus */
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #ff5722;
+  border-color: #007bff;
   outline: none;
-  box-shadow: 0px 0px 10px rgba(255, 87, 34, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3);
 }
 
-/* Button Styling */
+/* Placeholder Styling */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #888;
+}
+
+/* Message Field */
+.form-group textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Submit Button */
 .submit-button {
   width: 100%;
-  background: #ff5722;
+  padding: 12px;
+  background: #007bff;
   color: white;
   border: none;
-  padding: 12px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
-  font-weight: bold;
   text-transform: uppercase;
 }
 
 .submit-button:hover {
-  background: #e64a19;
+  background: #0056b3;
   transform: scale(1.05);
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .contact-container {
-    max-width: 90%;
-    padding: 20px;
-  }
-
-  .contact-title {
-    font-size: 22px;
-  }
-
-  .form-group-inline {
-    flex-direction: column;
-    gap: 15px; /* Stack the form fields on smaller screens */
-  }
-
-  .form-group-inline input,
-  .form-group-inline textarea {
-    width: 100%; /* Full width on small screens */
-    margin-bottom: 10px;
-  }
-
-  .submit-button {
-    font-size: 16px;
-  }
+/* Footer */
+.footer {
+  width: 100%;
+  background: #f8f9fa;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: auto; /* Push to the bottom */
 }

@@ -2,8 +2,7 @@
 
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import "./LonavalaTour.css"
-import "bootstrap/dist/css/bootstrap.min.css"
+ import "./LonavalaTour.css"
 
 import img12 from "../assets/Images/lonavala1.webp"
 import lonavala2 from "../assets/Images/lonavala2.webp"
