@@ -112,7 +112,7 @@ const LonavalaTour = () => {
                   <p className="lonavala-package-description">{pkg.description}</p>
                   <div className="lonavala-package-details">
                     <p className="lonavala-package-price">
-                      ₹{pkg.price} <span>per person</span>
+                      {pkg.price} <span>per person</span>
                     </p>
                     <p>🗓️ {pkg.duration}</p>
                     <p>👥 {pkg.groupSize}</p>

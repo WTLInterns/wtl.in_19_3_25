@@ -1,22 +1,26 @@
 import React, { useState } from "react";
 import "./Experiences.css"; // Import CSS
 import kokan1 from "../assets/kokan/kokan1.jpg"; // Sample image
+import kokan2 from "../assets/kokan/food.jpeg"; // Sample image
+import kokan3 from "../assets/kokan/temple.jpeg"; // Sample image
+
+
 
 const experiences = [
   {
     id: 1,
-    title: "Exploring Nagpur's gastronomy",
-    image: kokan1,
+    title: "Food ",
+    image: kokan2,
   },
   {
     id: 2,
-    title: "Exploring Nagpur's Rich Heritage and Sacred Sites",
+    title: "Islands",
     image: kokan1,
   },
   {
     id: 3,
-    title: "Karpur Baoli Ramtek: 1200yr Old Ancient Temple!",
-    image: kokan1,
+    title: " Old Ancient Temple!",
+    image: kokan3,
   },
 ];
 

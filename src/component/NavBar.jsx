@@ -59,7 +59,7 @@ const NavBar = () => {
                     <h3>Tirth Yatra</h3>
                     <Link
                       className="mega-menu-item"
-                      to="/kumbhmela"
+                      to="/kumbh-mela"
                       onClick={closeHolidaysMenu}
                     >
                       Kumbh Mela

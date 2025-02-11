@@ -9,7 +9,7 @@ import jyotirlingaImage2 from "../assets/Images/Jyotirling2.jpeg";
 import jyotirlingaImage3 from "../assets/Images/Rumi Gate.jpeg";
 import jyotirlingaImage4 from "../assets/Images/jyotirling1.jpeg";
 import leaf from "../assets/Images/leaf2.png";
-import jyotilinghasImg from "../assets/Images/wtlJyotilinghas.png"
+import jyotilinghasImg from "../assets/Images/jyotirlinga_image.png"
 const Home = () => {
   const navigate = useNavigate();
 
@@ -31,7 +31,8 @@ const Home = () => {
   const tourPackages = [
     {
       id: 1,
-      title: "West India Jyotirlinga Darshan",       description:
+      title: "West India Jyotirlinga Darshan",       
+      description:
       "A divine pilgrimage covering Somnath, Nageshwar, Bhimashankar, and Trimbakeshwar Jyotirlingas.",
     price: "₹ starting at 2999",
     inclusions: [

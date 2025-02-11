@@ -59,6 +59,8 @@ const tourPackages = [
 ];
 
 function GoaTour() {
+    const navigate = useNavigate();
+  
   return (
     <div className="carousel-container">
       <Carousel
@@ -110,8 +112,9 @@ function GoaTour() {
                 <p className="tour-description">{pkg.description}</p>
 
 
-                <button className="book-button" >Book Now</button>
-              </div>
+                <button className="book-button" onClick={() => navigate("/")}>
+                  Book Now
+                </button>              </div>
             </>
           ))}
         </div>

@@ -65,8 +65,8 @@
   }
   
   .tour-info p {
-    font-size: 18px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.6;
     max-width: 900px;
     margin: 0 auto 15px;
   }
@@ -155,7 +155,7 @@
   flex-grow: 1;
   overflow: hidden; /* Prevents content from pushing the button down */
   text-overflow: ellipsis;
-  min-height: 80px; /* Limit height to prevent overflow */
+  
 }
 
 /* Price */
@@ -281,7 +281,6 @@
 
   .tour-card {
       width: auto;
-      min-width: 300px;
       padding: 20px;
       height: auto;
       min-height: 800px; /* Maintain a proper height */

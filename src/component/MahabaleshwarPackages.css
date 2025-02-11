@@ -209,7 +209,7 @@
   flex-grow: 1;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-height: 60px; /* Reduced */
+  
 }
 
 /* Price */
@@ -349,7 +349,7 @@
 
   .tour-description {
       font-size: 12px;
-      max-height: 50px; /* Reduced */
+      /* max-height: 50px;  */
   }
 
   .tour-price {
