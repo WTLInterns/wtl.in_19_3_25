@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../assets/Images/aboutus.png';
-import './about.css';
+import '../component/About.css';
 
 const AboutUs = () => {
   return (
