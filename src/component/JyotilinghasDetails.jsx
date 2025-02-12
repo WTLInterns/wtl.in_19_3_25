@@ -14,7 +14,7 @@ import vishwanath from "../assets/Images/vishwanath.jpeg";
 import ramanath from "../assets/Images/ramanath.jpeg";
 import nageshwar from "../assets/Images/nageshwar.jpeg";
 import tryambakeshwar from "../assets/Images/tryambakeshwar.jpeg";
-import adhyashankar from "../assets/Images/adhyashankar.jpg";
+import adhyashankar from "../assets/Images/Adhyashankar.jpg";
 import grishneshwar from "../assets/Images/grishneshwar.jpeg";
 
 // Jyotirlinga information
