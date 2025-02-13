@@ -3,6 +3,8 @@ import img12 from "/src/assets/Images/Mahakumb.png"; // ✅ Import the image
 import {useNavigate} from "react-router-dom";
 import mahakumbh2 from "/src/assets/Images/mahakumbh2.png"; 
 import mahakumbh3 from "/src/assets/Images/mahakumbh3.png"; 
+import mahakumbh4 from "/src/assets/Images/mahakumbh4.png";
+import mahakumbh5 from "/src/assets/Images/mahakumbh5.jpg";
 
 
 export default function MahakumbhJourney() {
@@ -14,7 +16,7 @@ export default function MahakumbhJourney() {
       description: "Experience the divine energy of Mahakumbh with holy dips and rituals.",
       price: "₹11,999 per person",
       inclusions: ["3 Nights Stay", "Ganga Aarti Experience", "Local Temple Tour"],
-      image: mahakumbh2
+      image: mahakumbh2,
     },
     {
       id: 2,
@@ -30,7 +32,7 @@ export default function MahakumbhJourney() {
       description: "Explore the cultural and spiritual significance of Mahakumbh.",
       price: "₹11,750 per person",
       inclusions: ["3 Nights Stay", "City Heritage Tour", "River Cruise"],
-      image: "/src/assets/Images/mahakumbh4.png",
+      image: mahakumbh4,
     },
     {
       id: 4,
@@ -38,7 +40,7 @@ export default function MahakumbhJourney() {
       description: "Immerse yourself in sacred rituals and divine blessings.",
       price: "₹11,500 per couple",
       inclusions: ["3 Nights Stay", "Spiritual Guru Session", "Traditional Prasadam Meals"],
-      image: mahakumbh2,
+      image: mahakumbh5,
     },
   ];
   
