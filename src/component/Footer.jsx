@@ -1,5 +1,7 @@
 import "./Footer.css";
 import logo from "../assets/wtl.png";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -20,7 +22,7 @@ const Footer = () => {
           <span className="section-title">Explore</span>
           <ul className="animated-list">
             <li>
-              <a href="/about">About Us</a>
+            <Link to="/about">About Us</Link>
             </li>
           </ul>
         </div>
@@ -29,7 +31,7 @@ const Footer = () => {
           <span className="section-title">Quick Links</span>
           <ul className="animated-list">
             <li>
-              <a href="/contact">Contact Us</a>
+            <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -43,7 +45,7 @@ const Footer = () => {
             </li>
             <li className="contact-item">
               <i className="icon-phone"></i>
-              <a href="tel:+1234567890">+91 9730545491</a>
+              <a href="tel:9730545491">+91 9730545491</a>
             </li>
             <li className="contact-item">
               <i className="icon-location"></i>

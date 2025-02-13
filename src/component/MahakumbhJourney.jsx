@@ -1,6 +1,9 @@
 import "./MahakumbhJourney.css";
 import img12 from "/src/assets/Images/Mahakumb.png"; // ✅ Import the image
 import {useNavigate} from "react-router-dom";
+import mahakumbh2 from "/src/assets/Images/mahakumbh2.png"; 
+import mahakumbh3 from "/src/assets/Images/mahakumbh3.png"; 
+
 
 export default function MahakumbhJourney() {
   const navigate = useNavigate();
@@ -9,23 +12,23 @@ export default function MahakumbhJourney() {
       id: 1,
       title: "Mahakumbh Spiritual Retreat",
       description: "Experience the divine energy of Mahakumbh with holy dips and rituals.",
-      price: "₹18,999 per person",
+      price: "₹11,999 per person",
       inclusions: ["3 Nights Stay", "Ganga Aarti Experience", "Local Temple Tour"],
-      image: "/src/assets/Images/mahakumbh2.png",
+      image: mahakumbh2
     },
     {
       id: 2,
       title: "Sacred Mahakumbh Pilgrimage",
       description: "Witness the grandeur of the world's largest spiritual gathering.",
-      price: "₹24,999 per person",
+      price: "₹11,999 per person",
       inclusions: ["4 Nights Stay", "VIP Darshan Pass", "Daily Guided Rituals"],
-      image: "/src/assets/Images/mahakumbh3.png",
+      image: mahakumbh3,
     },
     {
       id: 3,
       title: "Mahakumbh Heritage Experience",
       description: "Explore the cultural and spiritual significance of Mahakumbh.",
-      price: "₹20,750 per person",
+      price: "₹11,750 per person",
       inclusions: ["3 Nights Stay", "City Heritage Tour", "River Cruise"],
       image: "/src/assets/Images/mahakumbh4.png",
     },
@@ -33,9 +36,9 @@ export default function MahakumbhJourney() {
       id: 4,
       title: "Mahakumbh Blissful Escape",
       description: "Immerse yourself in sacred rituals and divine blessings.",
-      price: "₹27,500 per couple",
+      price: "₹11,500 per couple",
       inclusions: ["3 Nights Stay", "Spiritual Guru Session", "Traditional Prasadam Meals"],
-      image: "/src/assets/Images/mahakumbh2.png",
+      image: mahakumbh2,
     },
   ];
   

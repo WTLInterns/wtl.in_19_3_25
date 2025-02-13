@@ -3,12 +3,24 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../component/GoaTour.css";
 import {  useNavigate } from "react-router-dom";
+import goa1 from "/src/assets/Images/goa4.png"
+import goa2 from "/src/assets/Images/goa5.png"
+import goa3 from "/src/assets/Images/goa6.png"
+import goa4 from "/src/assets/Images/church-goa.jpg"
+import goa5 from "/src/assets/Images/baga-beech-goa.jpg"
+import goa6 from "/src/assets/Images/Dudhsagar-Waterfalls.jpg"
+import goa7 from "/src/assets/Images/goa2.jpg"
+import goa8 from "/src/assets/Images/goa.jpg"
+import goa9 from "/src/assets/Images/goa1.jpg"
+
+
+
 
 
 const images = [
-  "src/assets/images/goa2.jpg",
-  "/src/assets/images/goa.jpg",
-  "/src/assets/images/goa1.jpg"
+  goa7,
+  goa8,
+  goa9
 
 ];
 
@@ -18,42 +30,42 @@ const tourPackages = [
     title: "Goa Fun Retreat",
     description: "Goa Fun Retreat is the perfect family getaway, offering a mix of relaxation and adventure. Enjoy pristine beaches, exciting water sports, scenic nature trails..",
 
-    image: "/src/assets/Images/goa4.png"
+    image: goa1
   },
   {
     id: 2,
     title: "Romantic Rendezvous",
     description: "Romantic Rendezvous Retreat is the ultimate escape for couples seeking love and relaxation. ",
 
-    image: "/src/assets/Images/goa5.png"
+    image: goa2
   },
   {
     id: 3,
     title: "Goa Getaway Bonanza",
     description: "Enjoy a relaxing family trip with comfortable stays and activities.",
 
-    image: "/src/assets/Images/goa6.png"
+    image: goa3
   },
   {
     id: 4,
     title: "Basilica of Bom Jesus",
     description: "The Basilica of Bom Jesus is one of Goa’s most famous landmarks and a UNESCO World Heritage Site. This 400-year-old church houses the mortal remains of St. Francis Xavier ",
 
-    image: "/src/assets/Images/church-goa.jpg"
+    image: goa4
   },
   {
     id: 5,
     title: "Baga Beech",
     description: "Baga Beach is one of Goa’s most popular and lively beaches, famous for its vibrant nightlife, water sports, and beach shacks",
 
-    image: "/src/assets/Images/baga-beech-goa.jpg"
+    image: goa5
   },
   {
     id: 6,
     title: "Dudhsagar Waterfall",
     description: "Dudhsagar Waterfalls, one of India’s tallest waterfalls, is a breathtaking four-tiered cascade located on the Goa-Karnataka border. ",
 
-    image: "/src/assets/Images/Dudhsagar-Waterfalls.jpg"
+    image: goa6
   },
 
 ];

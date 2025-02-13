@@ -5,62 +5,63 @@ import AshtavinayakImg2 from "../assets/Images/img3.jpeg"
 import AshtavinayakImg3 from "../assets/Images/img5.png"
 import AshtavinayakImg4 from "../assets/Images/img11.png"
 import { useNavigate } from "react-router-dom";
+import Ashtavinayak5 from "../assets/Images/ashtavinayak5.png"
+import imgA from "../assets/Images/ImgA.jpeg"
+import imgB from "../assets/Images/imgB.jpeg"
+import imgC from "../assets/Images/imgC.jpeg"
+import imgD from "../assets/Images/imgD.jpeg"
+import imgE from "../assets/Images/imgE.jpeg"
+import imgF from "../assets/Images/imgF.jpeg"
+import imgG from "../assets/Images/imgG.jpeg"
+import imgH from "../assets/Images/imgH.jpeg"
+import temple1 from "../assets/Images/ashtavinayak-morgaon-mayureshwar-ganpati-temple.jpeg"
+import temple2 from "../assets/Images/Shri Siddhivinayak - Siddhatek.png"
+import temple3 from "../assets/Images/Ballaleshwar-Pali-Ganpati-Temple.jpg"
+import temple4 from "../assets/Images/varadavinayak-temple-7.jpg"
+import temple5 from "../assets/Images/chintamani-temple-theur-3.jpg"
+import temple6 from "../assets/Images/Shri Girijatmaj - Lenyadri.jpg"
+import temple7 from "../assets/Images/shri_vighneshwarNew.jpeg"
+import temple8 from "../assets/Images/ranjangaon-ganpati-temple.jpg"
+
+
+
+
 
 
 
 const tourPackages = [
   {
     id: 1,
-    title: "Ashtavinayak Darshan",
+    title: "Sedan (12 rs/km) ",
     description:
-      "A spiritual journey covering the eight revered Ashtavinayak temples in Maharashtra with comfortable travel and stay.",
+      "A spiritual journey covering the 2 days and 1 night revered Ashtavinayak temples in Maharashtra with comfortable travel and stay.",
     price: "₹ starting at 2999",
-    inclusions: [
-      "2 Nights Stay",
-      "Puja & Rituals",
-      "Travel by AC Bus"
-    ],
     image: AshtavinayakImg1,
   },
   {
     id: 2,
-    title: "Ashtavinayak Darshan standard Package",
+    title: "Ertiga (16 rs/km)",
     description:
-      "Experience the Ashtavinayak Yatra with premium hotel stays, guided tours, and luxury travel.",
-    price: "₹ starting at 3999",
-    inclusions: [
-      "3 Nights Stay in Premium Hotels",
-      "Personalized Guide",
-      "Travel by AC Luxury Cab"
-    ],
+      "Experience the Ashtavinayak Yatra with 2 days and 1 night, guided tours, and luxury travel.",
+    price: "₹ starting at 2999",
     image: AshtavinayakImg2,
   },
   {
     id: 3,
-    title: "Ashtavinayak Darshan - One-Day Express Tour",
+    title: "SUV (20 rs/km)",
     description:
-      "A quick one-day pilgrimage covering all 8 Ganpati temples with fast-track darshan and comfortable travel.",
+      "A quick Ashtavinayak Yatra with 2 days and 1 night covering all 8 Ganpati temples with fast-track darshan and comfortable travel.",
     price: "₹ starting at 2999",
-    inclusions: [
-      "Same-Day Return",
-      "Fast-Track VIP Darshan",
-      "Snacks & Refreshments",
-      "Travel by AC Bus"
-    ],
+   
     image: AshtavinayakImg3,
   },
   {
     id: 4,
-    title: "Ashtavinayak Darshan ",
+    title: "Innova Crysta (22 rs/km) ",
     description:
-      "A divine pilgrimage combining Ashtavinayak temples with visits to Shirdi and Shani Shingnapur.",
-    price: "₹ starting at 4999",
-    inclusions: [
-      "3 Nights Stay",
-      "VIP Darshan at all temples",
-      "Visit to Shirdi Sai Baba Temple",
-      "Travel by AC Bus"
-    ],
+      "A divine pilgrimage combining Ashtavinayak temples with visits 2 days and 1 night.",
+    price: "₹ starting at 2999",
+    
     image: AshtavinayakImg4,
   },
 ];
@@ -86,7 +87,7 @@ const Ashtavinayak = () => {
 
       
       <div className="first-img">
-        <img src="../src/assets/Images/Ashtavinayak5.png" alt="Ganesha Logo"/>
+        <img src= {Ashtavinayak5} alt="Ganesha Logo"/>
       </div>
       <div className="container">
         <div className="places">
@@ -94,35 +95,35 @@ const Ashtavinayak = () => {
           <div className="circle-container">
             <div className="line" />
             <div className="circle">
-              <img src="../src/assets/Images/ImgA.jpeg" alt="Place 1" />
+              <img src={imgA} alt="Place 1" />
               <div className="tooltip">Shri Mayureshwar</div>
             </div>
             <div className="circle">
-              <img src="../src/assets/Images/imgB.jpeg" alt="Place 2" />
+              <img src={imgB} alt="Place 2" />
               <div className="tooltip">Shri Siddhivinayak </div>
             </div>
             <div className="circle">
-              <img src="../src/assets/Images/imgC.jpeg" alt="Place 3" />
+              <img src={imgC} alt="Place 3" />
               <div className="tooltip">Shri Ballaleshwar </div>
             </div>
             <div className="circle">
-              <img src="../src/assets/Images/imgD.jpeg" alt="Place 4" />
+              <img src={imgD} alt="Place 4" />
               <div className="tooltip">Shri Varadvinayak </div>
             </div>
             <div className="circle">
-              <img src="../src/assets/Images/imgE.jpeg" alt="Place 5" />
+              <img src={imgE} alt="Place 5" />
               <div className="tooltip">Shri Chintamani </div>
             </div>
             <div className="circle">
-              <img src="../src/assets/Images/imgF.jpeg" alt="Place 6" />
+              <img src={imgF} alt="Place 6" />
               <div className="tooltip">Shri Girijatmaj </div>
             </div>
             <div className="circle">
-              <img src="../src/assets/Images/imgG.jpeg" alt="Place 7" />
+              <img src={imgG} alt="Place 7" />
               <div className="tooltip">Shri Vigneshwar </div>
             </div>
             <div className="circle">
-              <img src="../src/assets/Images/imgH.jpeg" alt="Place 8" />
+              <img src={imgH} alt="Place 8" />
               <div className="tooltip">Shri Mahaganpati </div>
             </div>
           </div>
@@ -136,7 +137,7 @@ const Ashtavinayak = () => {
           {/* First Section */}
           <div className="section">
             <img
-              src="../src/assets/Images/ashtavinayak-morgaon-mayureshwar-ganpati-temple.jpeg"
+              src={temple1}
               alt="Shri Mayureshwar"
             />
             <div className="info">
@@ -163,14 +164,14 @@ const Ashtavinayak = () => {
               </p>
             </div>
             <img
-              src="../src/assets/Images/Shri Siddhivinayak - Siddhatek.png"
+              src={temple2}
               alt="Shri Siddhivinayak"
             />
           </div>
           {/* Second Section */}
           <div className="section">
             <img
-              src="../src/assets/Images/Ballaleshwar-Pali-Ganpati-Temple.jpg"
+              src={temple3}
               alt="Shri Ballaleshwar"
             />
             <div className="info">
@@ -195,7 +196,7 @@ const Ashtavinayak = () => {
               </p>
             </div>
             <img
-              src="../src/assets/Images/varadavinayak-temple-7.jpg"
+              src={temple4}
               alt="Shri Varadvinayak"
             />
           </div>
@@ -203,7 +204,7 @@ const Ashtavinayak = () => {
           {/* Add additional sections here for Chintamani, Girijatmaj, Vigneshwar, Mahaganpati */}
           <div className="section">
             <img
-              src="../src/assets/Images/chintamani-temple-theur-3.jpg"
+              src={temple5}
               alt="Shri Varadvinayak"
             />
             <div className="info">
@@ -237,13 +238,13 @@ const Ashtavinayak = () => {
               </p>
             </div>
             <img
-              src="../src/assets/Images/Shri Girijatmaj - Lenyadri.jpg"
+              src={temple6}
               alt="Shri Varadvinayak"
             />
           </div>
           <div className="section">
             <img
-              src="../src/assets/Images/shri_vighneshwarNew.jpeg"
+              src={temple7}
               alt="Shri Varadvinayak"
             />
             <div className="info">
@@ -274,7 +275,7 @@ const Ashtavinayak = () => {
               </p>
             </div>
             <img
-              src="../src/assets/Images/ranjangaon-ganpati-temple.jpg"
+              src={temple8}
               alt="Shri Varadvinayak"
             />
           </div>

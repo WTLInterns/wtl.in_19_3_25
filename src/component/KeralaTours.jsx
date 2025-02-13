@@ -4,6 +4,12 @@ import "./MahabaleshwarPackages.css";
 import { useNavigate } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import keral1 from "/src/assets/Images/KeralaEscape.png";
+import keral2 from "/src/assets/Images/kerala.png"
+import keral3 from "/src/assets/Images/KeralaRomantic.png"
+import keral4 from "/src/assets/Images/KeralaWildlifeAdventure.png"
+
+
 
 const keralaPackages = [
   {
@@ -12,7 +18,7 @@ const keralaPackages = [
     description: "Enjoy houseboat cruises, lush greenery, and serene backwaters.",
     price: "₹18,999 per person",
     inclusions: ["4 Nights Stay", "Houseboat Ride", "Daily Breakfast"],
-    image: "/src/assets/Images/KeralaEscape.png"
+    image: keral1
   },
   {
     id: 2,
@@ -20,7 +26,7 @@ const keralaPackages = [
     description: "Explore Munnar tea gardens and relax in Alleppey's houseboats.",
     price: "₹22,499 per person",
     inclusions: ["5 Nights Stay", "Tea Plantation Visit", "Backwater Cruise"],
-    image: "/src/assets/Images/kerala.png"
+    image: keral2
   },
   {
     id: 3,
@@ -28,7 +34,7 @@ const keralaPackages = [
     description: "Ideal for couples with luxury stays and stunning views.",
     price: "₹25,000 per couple",
     inclusions: ["3 Nights Stay", "Candlelight Dinner", "Beach Walks"],
-    image: "/src/assets/Images/KeralaRomantic.png"
+    image: keral3
   },
   {
     id: 4,
@@ -36,7 +42,7 @@ const keralaPackages = [
     description: "Experience Periyar wildlife sanctuary and thrilling activities.",
     price: "₹20,750 per person",
     inclusions: ["3 Nights Stay", "Jungle Safari", "Trekking Experience"],
-    image: "/src/assets/Images/KeralaWildlifeAdventure.png"
+    image:keral4
   }
 ];
 

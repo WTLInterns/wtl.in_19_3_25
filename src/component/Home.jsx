@@ -5,6 +5,7 @@ import "./Home.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import jyotirlingaImage from "../assets/Images/jyotirlinga_image.png";
+import jyotirlingaImage1 from "../assets/Images/main1.png";
 import jyotirlingaImage2 from "../assets/Images/Jyotirling2.jpeg";
 import jyotirlingaImage3 from "../assets/Images/Rumi Gate.jpeg";
 import jyotirlingaImage4 from "../assets/Images/jyotirling1.jpeg";
@@ -14,63 +15,44 @@ const Home = () => {
   const navigate = useNavigate();
 
   const jyotirlingas = [
-    "Somnath (Gujarat)",
-    "Mallikarjuna (AndhraPradesh)",
-    "Mahakaleshwar (MadhyaPradesh)",
-    "Omkareshwar (MadhyaPradesh)",
-    "Kedarnath (Uttarakhand)",
-    "Bhimashankar (Maharashtra)",
-    "Vishwanath (UttarPradesh)",
-    "Ramanath (TamilNadu)",
-    "Nageshwar (Gujarat)",
-    "Tryambakeshwar (Maharashtra)",
-    "Adhyashankar (Himalayas)",
-    "Grishneshwar (Maharashtra)",
+    "Bhimashankar Jyotirlinga (Pune, Maharashtra)", 
+    "Trimbakeshwar Jyotirlinga (Nashik, Maharashtra)",
+    "Grishneshwar Jyotirlinga (Aurangabad, Maharashtra)",
+    "Aundha Nagnath Jyotirlinga (Hingoli, Maharashtra)",
+    "Parli Vaijnath Jyotirlinga (Beed, Maharashtra)"
   ];
-
   const tourPackages = [
     {
       id: 1,
-      title: "West India Jyotirlinga Darshan",       
+      title: " Jyotirlinga Darshan(Ac bus)",  
       description:
-      "A divine pilgrimage covering Somnath, Nageshwar, Bhimashankar, and Trimbakeshwar Jyotirlingas.",
-    price: "₹ starting at 2999",
-    inclusions: [
-      "1 Nights Stay",
-      "VIP Darshan at 4 Jyotirlingas",
-      "Puja & Rituals",
-      "Travel by AC Bus/cab"],
-      image: jyotilinghasImg,
+        "A divine pilgrimage covering Bhimashankar, Trimbakeshwar, Grishneshwar, Aundha Nagnath, and Parli Vaijnath Jyotirlingas.",
+      image: jyotirlingaImage1,
     },
     {
       id: 2,
-      title: "Sacred North & Central Jyotirlinga Yatra",
-    description:
-      "A spiritual journey covering Kashi Vishwanath, Mahakaleshwar, Omkareshwar, and Baidyanath Jyotirlingas.",
-      price: "₹ starting at 2999",
-      inclusions: ["1 Nights Stay", "Daily Breakfast & Dinner", "Guided Tours"],
+      title: " Jyotirlinga Yatra(non AC bus)",
+      description:
+        "A spiritual journey coveringBhimashankar, Trimbakeshwar, Grishneshwar, Aundha Nagnath, and Parli Vaijnath Jyotirlingas.",
       image: jyotirlingaImage2,
     },
     {
       id: 3,
-      title: "South India Jyotirlinga Pilgrimage",
-    description:
-      "Visit the sacred Jyotirlingas of Rameshwaram, Mallikarjuna, and Bhimashankar, along with nearby temples.",
-    price: "₹ starting at 2999",
-      inclusions: ["1 Nights Stay", "Family Activities", "Cultural Sightseeing",],
+      title: "Jyotirlinga darshan (cab)",
+      description:
+        "Visit the sacred Jyotirlingas ofBhimashankar, Trimbakeshwar, Grishneshwar, Aundha Nagnath, and Parli Vaijnath along with nearby temples.",
       image: jyotirlingaImage3,
     },
     {
       id: 4,
-      title: "12 Jyotirlinga Complete Tour",
+      title: " Jyotirlinga Tour(cab)",
       description:
         "A once-in-a-lifetime pilgrimage covering all 12 Jyotirlingas across India with spiritual guidance.",
-      price: "₹ starting at 2999",
-      inclusions: ["1 Nights Stay", "All Temple Darshans",
-      "Spiritual Guidance & Rituals"],
       image: jyotirlingaImage4,
     },
+   
   ];
+  
 
   return (
     <div className="home-container">
@@ -88,7 +70,7 @@ const Home = () => {
         </div>
 
         <div className="jyotirlingas-info">
-          <h2>12 Jyotirlingas Tour</h2>
+          <h2>Jyotirlingas Tour</h2>
           <div className="jyotirlingas-list">
             {jyotirlingas.map((jyotirlinga, index) => (
               <div key={index} className="jyotirlinga-item">
@@ -101,6 +83,7 @@ const Home = () => {
                   }}
                 >
                   <p>{jyotirlinga}</p>
+                  
                 </Link>
               </div>
             ))}
@@ -118,7 +101,7 @@ const Home = () => {
                 <img src={pkg.image} alt={pkg.title} className="tour-image" />
                 <h3 className="tour-title">{pkg.title}</h3>
                 <p className="tour-description">{pkg.description}</p>
-                <p className="tour-price">{pkg.price}</p>
+                <p className="tour-price">3 days 2 night</p>
 
                 <button className="book-button" onClick={() => navigate("/")}>
                   Book Now
