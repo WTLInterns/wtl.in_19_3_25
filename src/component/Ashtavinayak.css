@@ -1,0 +1,895 @@
+     body  {
+            font-family:  Arial,  sans-serif;
+            margin:  0px;
+            padding:  0px;
+            background-size:  cover;
+            color:  #333;
+            background-color:  white;
+      }
+            header  {
+      position:  relative;
+      display:  flex;
+      align-items:  center;
+      justify-content:  space-between;
+      padding:  20px;
+      background-color:  beige;
+      color:  red;
+      flex-wrap:  wrap;
+     /* Allows wrapping for smaller screens */;
+}
+header img  {
+      width:  100px;
+     /* Adjust logo size for responsiveness */;
+}
+header h1  {
+      font-size:  1.5rem;
+      margin-left:  10px;
+      text-align:  center;
+    
+}
+nav  {
+      display:  flex;
+      gap:  20px;
+      flex-wrap:  wrap;
+    
+}
+nav a  {
+      color:  black;
+      text-decoration:  none;
+      font-size:  1rem;
+      transition:  color 0.3s ease;
+    
+}
+nav a:hover  {
+      color:  #ff5722;
+      text-decoration:  none;
+    
+}
+/* Responsive Styles */
+@media (max-width:  768px)  {
+      header  {
+        flex-direction:  column;
+     /* Stack items vertically */
+         align-items:  center;
+     /* Center align items */   
+      text-align:  center;
+      }
+  header img  {
+        width:  80px;
+     /* Smaller logo for tablets */  }
+  header h1  {
+        font-size:  1.2rem;
+     /* Reduce font size */  
+       margin-left:  0;
+     /* Center-align headline */  
+       margin-top:  10px;
+      }
+  /* nav  {
+        justify-content:  center;
+        margin-top:  10px;
+      } */
+  /* nav a  {
+        font-size:  0.9rem;
+      } */
+;
+}@media (max-width:  480px)  {
+      header  {
+        padding:  10px;
+     /* Reduce padding on smaller devices */  }
+  header img  {
+        width:  60px;
+     /* Smaller logo for mobile */  }
+  header h1  {
+        font-size:  1rem;
+  }
+}  
+    .first-img  {
+            position:  relative;
+            width:  100%;
+            height:  50%;
+            overflow:  hidden;
+           
+      }
+      .first-img img  {
+            width:  100%;
+            height:  100%;
+            object-fit:  contain;
+      }
+       .booking-form  {
+            position:  absolute;
+            top:  1%;
+            bottom:  3%;
+            right:  5%;
+            background:  rgba(255,  255,  255,  0.8);
+                  padding:  20px;
+            border-radius:  10px;
+            box-shadow:  0 4px 8px rgba(0,  0,  0,  0.2);
+            width:  350px;
+            z-index:  10;
+      }
+      .booking-form h3  {
+            top: 1%;
+            bottom:  5%;
+            padding:  1px;
+            text-align:  center;
+            color:  darkblue;
+            margin-bottom:  10px;
+      }
+      .booking-form label  {
+            display:  block;
+            margin-bottom:  5px;
+            font-weight:  bold;
+            color:  black;
+      }
+      .booking-form input  {
+            width:  100%;
+            padding:  5px;
+            margin-bottom:  10px;
+            border:  1px solid #ccc;
+            border-radius:  5px;
+            box-sizing:  border-box;
+      }
+      .booking-form button  {
+            width:  100%;
+            padding:  5px;
+            background-color:  darkblue;
+            color:  white;
+            border:  none;
+            border-radius:  5px;
+            font-size:  1rem;
+            cursor:  pointer;
+            margin-top:  5%;
+      }
+      .booking-form button:hover  {
+            background-color:  #0056b3;
+      }
+      /* Floating Icons Container */
+      .floating-icons-container  {
+      position:  fixed;
+      bottom:  20px;
+     /* Adjust positioning */ 
+      width:  100%;
+     /* Take full width of the viewport */  
+     display:  flex;
+      justify-content:  space-between;
+     /* Align icons to left and right */ 
+      padding:  0 20px;
+     /* Add padding for spacing */ 
+      z-index:  1000;
+    ;
+}
+/* Individual Icon Styling */
+.floating-icons img, .floating-icons2 img  {
+      width:  50px;
+      height:  50px;
+      cursor:  pointer;
+      transition:  transform 0.3s ease,  box-shadow 0.3s ease;
+    ;
+}
+.floating-icons img:hover, .floating-icons2 img:hover  {
+      transform:  scale(1.1);
+      box-shadow:  0 4px 8px rgba(0,  0,  0,  0.3);
+    ;
+}
+/* Responsive for Screens Below 450px */
+@media (max-width:  450px)  {
+      .floating-icons-container  {
+        bottom:  10px;
+     /* Adjust positioning for smaller screens */ 
+        padding:  0 10px;
+
+
+     /* Reduce padding for smaller screens */  }
+  .floating-icons img,   .floating-icons2 img  {
+        width:  40px;
+     /* Reduce icon size */    height:  40px;
+      }
+
+}
+
+
+.container  {
+      width:  100%;
+      max-width:  100%;
+      padding: 30px;
+      
+      }
+      .containers{
+            padding:0px 90px;
+      }
+      @media (max-width:  780px) {
+            .containers{
+                  padding:0px;
+            }   
+      }
+      @media (max-width:  450px) {
+            .containers{
+                  padding:0px;
+            }   
+      }
+
+.places h2  {
+      margin-bottom:  20px;
+      color:  black;
+      background-color:  rgba(255,  228,  196,  0.8);
+     /* Adjusted for clarity */  border-radius:  5px;
+      font-weight:  900;
+    ;
+}
+.places h2:hover  {
+      color:  darkblue;
+      transform:  scale(1.2);
+    ;
+}
+.circle-container  {
+      position:  relative;
+      display:  flex;
+      align-items:  center;
+      flex-wrap:  wrap;
+     /* margin:  50px 80px; */
+      gap:  15px;
+     
+}
+
+.line  {
+      position:  absolute;
+      height:  2px;
+      background-color:  #ff5722;
+      width: 110%;
+      margin-left: -50px;
+      margin-bottom: 10px;
+      z-index:  -1;
+    
+}
+.circle  {
+      width:  130px;
+      height:  130px;
+      border-radius:  80%;
+      overflow:  hidden;
+      border:  3px solid red;
+      cursor:  pointer;
+      position:  relative;
+      z-index:  1;
+      background-color:  white;
+      transition:  transform 0.3s ease;
+    
+}
+
+
+.circle img  {
+      width:  100%;
+      height:  100%;
+      object-fit:  cover;
+    
+}
+/* .circle img  {
+    width:  60%;
+    height:  70%;
+    object-fit:  cover;
+  
+} */
+.circle:hover  {
+      transform:  scale(1.2);
+    ;
+}
+.tooltip  {
+      position:  absolute;
+      bottom:  15px;
+      left:  50%;
+      transform:  translateX(-50%);
+      background-color:  #FFA725;
+      color:  rgb(54, 51, 51);
+      padding:  5px 5px;
+      border-radius:  15px;
+      font-size:  0.60rem;
+      font-weight:  bold;
+      opacity:  0;
+     transition:  opacity 0.3s ease;
+      pointer-events:  none;
+      white-space:  nowrap;
+}
+
+.circle:hover .tooltip  {
+      opacity:  1;
+     /* Show tooltip on hover */;
+}
+/* Responsive Styles */@media (max-width:  768px)  {
+      .circle-container  {
+        justify-content:  center;
+        gap:  15px;
+     /* Adjust spacing for smaller screens */  }
+
+;
+}@media (max-width:  450px)  {
+      .circle-container  {
+        flex-direction:  column;
+     /* Stack circles vertically on very small screens */  }
+  .line  {
+        display:  none;
+     /* Hide the line for very small screens */  }
+  .circle  {
+        width:  90px;
+        height:  90px;
+     /* Further reduce circle size for mobile */  }
+  .tooltip  {
+        font-size:  0.45rem;
+     /* Further adjust tooltip font size */  }
+;
+}      body  {
+            font-family:  Arial,  sans-serif;
+            margin:  0px;
+            padding:  0px;
+            background-size:  cover;
+            color:  #333;
+            background-color:  white;
+      }
+            header  {
+                position:  relative;
+                display:  flex;
+                align-items:  center;
+                justify-content:  space-between;
+                padding:  20px 40px;
+                background-color:  beige;
+                color:  red;
+                /* background:  url('./images/wltheader.png');
+     */    }
+      header img  {
+            width:  120px;
+      }
+      header h1  {
+                font-size:  1.5rem;
+                margin-left:  10%;
+            /* color:  red;
+            text-shadow:  2px 2px 4px rgba(0,  0,  0,  0.7);
+            margin-left:  20%;
+            text-align:  center;
+     */  }
+      nav  {
+                display:  flex;
+                gap:  20px;
+        }
+        nav a  {
+                color:  black;
+                text-decoration:  none;
+                font-size:  1rem;
+                transition:  color 0.3s ease;
+        }
+        nav a:hover  {
+                color:  #ff5722;
+                text-decoration:  none;
+        }
+        .first-img {
+            position: relative;
+            overflow: hidden;
+          }
+          
+.first-img img  {
+      width:  100%;
+      height: 100%;
+      object-fit:  cover;
+    
+}
+.booking-form  {
+      position:  absolute;
+      top:  10%;
+      right:  5%;
+      background:  rgba(255,  255,  255,  0.9);
+      padding:  20px;
+      border-radius:  10px;
+      box-shadow:  0 4px 8px rgba(0,  0,  0,  0.2);
+      width:  350px;
+      z-index:  10;
+      max-height:  calc(100% - 40px);
+     /* Ensure form fits the screen */  overflow-y:  auto;
+     /* Scroll if content exceeds viewport */;
+}
+.booking-form h3  {
+      text-align:  center;
+      color:  darkblue;
+      margin-bottom:  10px;
+    ;
+}
+.booking-form label  {
+      display:  block;
+      margin-bottom:  5px;
+      font-weight:  bold;
+      color:  black;
+    ;
+}
+.booking-form input, .booking-form select  {
+      width:  100%;
+      padding:  10px;
+      margin-bottom:  15px;
+      border:  1px solid #ccc;
+      border-radius:  5px;
+      box-sizing:  border-box;
+    ;
+}
+.booking-form button  {
+      width:  100%;
+      padding:  10px;
+      background-color:  darkblue;
+      color:  white;
+      border:  none;
+      border-radius:  5px;
+      font-size:  1rem;
+      cursor:  pointer;
+    ;
+}
+.booking-form button:hover  {
+      background-color:  #0056b3;
+    ;
+}
+/* Responsive Styles */@media (max-width:  768px)  {
+      .booking-form  {
+        position:  static;
+        margin:  20px auto;
+        width:  90%;
+        transform:  translateY(0);
+        box-shadow:  none;
+     /* Remove shadow for mobile */  }
+  .first-img  {
+        height:  auto;
+        margin-top: 40px;
+      }
+  .first-img img  {
+        height:  auto;
+        object-fit:  cover;
+      }
+;
+}@media (max-width:  480px)  {
+      .booking-form  {
+        padding:  15px;
+        width:  90%;
+        margin:  10px auto;
+        max-height:  calc(100vh - 20px);
+     /* Ensure full visibility on smaller screens */    overflow-y:  auto;
+     /* Add scroll for small screens */  }
+  .booking-form input,   .booking-form select  {
+        padding:  8px;
+      }
+  .booking-form button  {
+        padding:  8px;
+        font-size:  0.9rem;
+      }
+  .booking-form h3  {
+        font-size:  1.2rem;
+      }
+;
+}      /* Floating Icons Container */
+.floating-icons-container  {
+      position:  fixed;
+      bottom:  20px;
+     /* Adjust positioning */  width:  100%;
+     /* Take full width of the viewport */  display:  flex;
+      justify-content:  space-between;
+     /* Align icons to left and right */  padding:  0 20px;
+     /* Add padding for spacing */  z-index:  1000;
+    ;
+}
+/* Individual Icon Styling */.floating-icons img, .floating-icons2 img  {
+      width:  50px;
+      height:  50px;
+      cursor:  pointer;
+      transition:  transform 0.3s ease,  box-shadow 0.3s ease;
+    ;
+}
+.floating-icons img:hover, .floating-icons2 img:hover  {
+      transform:  scale(1.1);
+      box-shadow:  0 4px 8px rgba(0,  0,  0,  0.3);
+    ;
+}
+/* Responsive for Screens Below 450px */@media (max-width:  450px)  {
+      .floating-icons-container  {
+        bottom:  10px;
+     /* Adjust positioning for smaller screens */    padding:  0 10px;
+     /* Reduce padding for smaller screens */  }
+  .floating-icons img,   .floating-icons2 img  {
+        width:  40px;
+     /* Reduce icon size */    height:  40px;
+      }
+;
+}
+
+.places  {
+      margin-top:  5%;
+    
+}
+.places h2  {
+      margin-bottom:  20px;
+      color:  black;
+      background-color:  rgba(255,  255,  255,  0.8);
+      border-radius:  5px;
+      font-weight:  900;
+    ;
+}
+.places h2:hover  {
+      color:  darkblue;
+      transform:  scale(1.2);
+    ;
+}
+
+
+.circle  {
+      width:  130px;
+      height:  140px;
+      border-radius:  50%;
+      overflow:  hidden;
+      border:  3px solid red;
+      cursor:  pointer;
+      /* position:  relative; */
+      z-index:  1;
+      background-color:  white;
+      transition:  transform 0.3s ease;
+      display:  flex;
+      flex-direction:  column;
+     /* For proper text alignment in mobile */  align-items:  center;
+    ;
+}
+
+.circle:hover  {
+      transform:  scale(1.2);
+    ;
+}
+
+.circle:hover .tooltip  {
+      opacity:  1;
+     /* Tooltip appears on hover for larger screens */;
+}
+/* Responsive Styles */@media (max-width:  450px)  {
+      .tooltip  {
+        position:  static;
+        position:  absolute;
+      bottom:  15px;
+      left:  50%;
+      transform:  translateX(-50%);
+      background-color:  #FFA725;
+      color:  rgb(54, 51, 51);
+      padding:  5px 5px;
+      border-radius:  15px;
+      font-size:  0.60rem;
+      font-weight:  bold;
+      opacity:  0;
+     transition:  opacity 0.3s ease;
+      pointer-events:  none;
+      white-space:  nowrap;
+     /* background-color:  transparent; */
+     }
+    .circle  {
+        width:  200px;
+        height: 200px;
+        /* margin-bottom:  20px; */
+      }
+  .circle img  {
+        width:  100%;
+        height:  100%;
+        object-fit:  cover;
+      }
+  .circle-container  {
+        flex-direction:  column;    
+     /* Stack circles vertically */   
+      gap:  15px;
+    }
+;
+}      .book-tour  {
+      color:  darkblue;
+      display:  flex;
+      justify-content:  center;
+     /* Center-align horizontally */  text-align:  center;
+     /* Center-align text */  margin:  20px auto;
+     /* Add vertical spacing and center horizontally */  padding:  10px;
+     /* Add padding for spacing */  max-width:  90%;
+     /* Limit the maximum width */;
+}
+/* Responsive Font Sizes */.book-tour h1  {
+      font-size:  2rem;
+     /* Default font size */  line-height:  1.5;
+     /* Improve readability */;
+}
+/* Tablet and smaller laptop screens */@media (max-width:  768px)  {
+      .book-tour h1  {
+        font-size:  1.8rem;
+     /* Slightly smaller font */  }
+;
+}/* Mobile screens */@media (max-width:  450px)  {
+      .book-tour h1  {
+        font-size:  1.5rem;
+     /* Smaller font for mobile screens */    line-height:  1.4;
+     /* Adjust line height for compact space */  }
+;
+}      /* General Styles */
+.container2  {
+      display:  flex;
+      flex-direction:  column;
+      align-items:  center;
+      padding:  20px;
+    ;
+}
+.section  {
+      display:  flex;
+      align-items:  center;
+      margin-bottom:  40px;
+      margin-right:  10px;
+      flex-wrap:  wrap;
+     /* Ensure sections stack on smaller screens */;
+}
+.section img  {
+      width:  100%;
+      max-width:  400px;
+      height:  auto;
+      margin:  0 20px;
+    ;
+}
+.info  {
+      max-width:  600px;
+      flex:  1;
+    ;
+}
+      .book-tour  {
+      color:  darkblue;
+      display:  flex;
+      justify-content:  center;
+     /* Center-align horizontally */  text-align:  center;
+     /* Center-align text */  margin:  20px auto;
+     /* Add vertical spacing and center horizontally */  padding:  10px;
+     /* Add padding for spacing */  max-width:  90%;
+     /* Limit the maximum width */;
+}
+/* Responsive Font Sizes */.book-tour h1  {
+      font-size:  2rem;
+     /* Default font size */  line-height:  1.5;
+     /* Improve readability */;
+}
+/* Tablet and smaller laptop screens */@media (max-width:  768px)  {
+      .book-tour h1  {
+        font-size:  1.8rem;
+     /* Slightly smaller font */  }
+;
+}/* Mobile screens */@media (max-width:  450px)  {
+      .book-tour h1  {
+        font-size:  1.5rem;
+     /* Smaller font for mobile screens */  
+       line-height:  1.4;
+     /* Adjust line height for compact space */  }
+;
+}      .container2  {
+      display:  flex;
+      flex-direction:  column;
+      align-items:  center;
+      padding:  20px;
+    ;
+}
+.section  {
+      display:  flex;
+      align-items:  center;
+      margin-bottom:  40px;
+      margin-right:  10px;
+      flex-wrap:  wrap;
+     /* Ensure sections stack on smaller screens */;
+}
+.section img  {
+      width:  100%;
+      max-width:  400px;
+      height:  auto;
+      margin:  0 20px;
+    ;
+}
+.info  {
+      max-width:  600px;
+      flex:  1;
+    ;
+}
+.info h3  {
+      text-align:  center;
+      margin:  0;
+      color:  #d35400;
+      font-weight:  bold;
+      font-size:  1.5rem;
+    ;
+}
+.info h3:hover  {
+      color:  blue;
+      transform:  translate(0.9rem);
+    ;
+}
+.info p  {
+      line-height:  2.1;
+      padding:  20px;
+      text-align:  justify;
+      font-size:  1rem;
+    ;
+}
+/* Responsive Styles */@media (max-width:  1200px)  {
+      /* Laptop view adjustments */  .section img  {
+        width:  40%;
+        height:  auto;
+      }
+  .info  {
+        max-width:  500px;
+      }
+;
+}@media (max-width:  768px)  {
+      /* Tablet and mobile view adjustments */  
+      .container2  {
+        padding:  10px;
+      }
+  .section  {
+        flex-direction:  column;
+   text-align:  center;
+      }
+  .section img  {
+        width:  80%;
+       margin:  10px 0;
+      }
+  .info  {
+        max-width:  100%;
+      }
+  .info h3  {
+        font-size:  1.2rem;
+     /* Reduce font size on smaller screens */  }
+  .info p  {
+        font-size:  0.9rem;
+     /* Adjust text size for readability */  }
+;
+}/* Mobile view */@media (max-width:  480px)  {
+      .info h3  {
+        font-size:  1rem;
+     /* Even smaller heading font for mobile */  }
+  .info p  {
+        font-size:  0.85rem;
+     /* Adjust paragraph font size */    padding:  10px;
+      }
+;
+}       /* General Container Styling */
+      .container3, .container4  {
+      margin-left:  20px;
+      margin-right:  40px;
+      margin-bottom:  50px;
+    ;
+}
+
+
+/* Media Queries for Responsive Design *//* For screens smaller than 1024px (Tablets and smaller laptops) */
+@media (max-width:  1024px)  {
+      .container3,  .container4  {
+        margin-left:  10px;
+        margin-right:  10px;
+      }
+  .card  {
+        width:  100%;
+     /* Cards take full width on smaller screens */    margin:  15px 0;
+     /* Space between cards */  }
+  .card img  {
+        height:  180px;
+     /* Adjust image height on smaller screens */  }
+  .card h1  {
+        font-size:  22px;
+     /* Adjust font size for smaller screens */  }
+  .card p  {
+        font-size:  14px;
+     /* Adjust paragraph font size */  }
+  .row  {
+        display:  flex;
+        flex-wrap:  wrap;
+        justify-content:  center;
+     /* Center the cards */  }
+  .col-md-3  {
+        width:  50%;
+     /* Two cards per row */  }
+;
+}/* For screens smaller than 768px (Mobile Devices) */
+@media (max-width:  768px)  {
+      .card  {
+        width:  100%;
+     /* Cards take full width on mobile */  
+       margin:  20px 0;
+     /* Space between cards */  }
+  .card img  {
+        height:  150px;
+     /* Adjust image height for mobile screens */  }
+  .card h1  {
+        font-size:  20px;
+     /* Adjust font size for mobile */  }
+  .card p  {
+        font-size:  13px;
+     /* Adjust font size for mobile */  }
+  .row  {
+        display:  flex;
+        flex-wrap:  wrap;
+        justify-content:  center;
+     /* Center the cards */  }
+  .col-md-3  {
+        width:  100%;
+     /* One card per row */  }
+;
+}     
+
+/*  */
+/* General Styles for Ashtavinayak Temples */
+.container2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      margin-right: 10px;
+      flex-wrap: wrap;
+    }
+    
+    .section img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 20px;
+    }
+    
+    .info {
+      max-width: 600px;
+      flex: 1;
+    }
+    
+    .info h3 {
+      text-align: center;
+      margin: 0;
+      color: #d35400;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    
+    .info h3:hover {
+      color: blue;
+      transform: translate(0.9rem);
+    }
+    
+    .info p {
+      line-height: 2.1;
+      padding: 20px;
+      text-align: justify;
+      font-size: 1rem;
+    }
+    
+    /* Only modify the mobile view */
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .section img {
+        width: 80%;
+        margin: 10px 0;
+        order: 1; /* Force images to appear first */
+      }
+    
+      .info {
+        max-width: 100%;
+        order: 2; /* Force text to appear second */
+      }
+    
+      .info h3 {
+        font-size: 1.2rem;
+      }
+    
+      .info p {
+        font-size: 0.9rem;
+      }
+    }
+    
+    /* Mobile view */
+    @media (max-width: 480px) {
+      .info h3 {
+        font-size: 1rem;
+      }
+    
+      .info p {
+        font-size: 0.85rem;
+        padding: 10px;
+      }
+    }
+    
+    

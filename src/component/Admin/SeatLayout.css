@@ -1,0 +1,72 @@
+/* Base styles */
+.app-containers {
+  text-align: center;
+  /* padding: 30px; */
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+
+}
+
+.button-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.view-button {
+  padding: 10px 20px;
+  margin: 10px; /* Adjusted margin for better spacing on small screens */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #0056b3;
+}
+
+.view-button.active {
+  background-color: #0056b3;
+  font-weight: bold;
+}
+
+.view-container {
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    align-items: center;
+  }
+
+  .view-button {
+    width: 80%; /* Make buttons wider on smaller screens */
+    margin: 5px 0; /* Adjust margin for vertical stacking */
+  }
+
+  .app-container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  h1 {
+    font-size: 24px; /* Adjust heading size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .view-button {
+    width: 100%; /* Full-width buttons on very small screens */
+    font-size: 14px; /* Slightly smaller font size */
+  }
+
+  h1 {
+    font-size: 20px; 
+  }
+}

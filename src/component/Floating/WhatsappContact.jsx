@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa'; 
 import './WhatsappContact.css'; // Include the CSS file
@@ -16,12 +17,12 @@ const WhatsappContact = () => {
     <div className="floating-buttons-container">
       {/* WhatsApp Floating Button */}
       <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="floating-button whatsapp">
-        <FaWhatsapp className="icon" />
+        <FaWhatsapp className="wicon" />
       </a>
 
       {/* Contact Floating Button for Calling */}
       <a href={phoneCallLink} className="floating-button contact">
-        <FaPhoneAlt className="icon" />
+        <FaPhoneAlt className="wicon" />
       </a>
     </div>
   );

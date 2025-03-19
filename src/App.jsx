@@ -17,7 +17,15 @@ import Ashtavinayak from "./component/Ashtavinayak";
  import MahabaleshwarPackages from "./component/MahabaleshwarPackages";
  import MahakumbhJourney from "./component/MahakumbhJourney";
  import LonavalaTour from "./component/LonavalaTour";
-
+ import AdminDashboard from "./component/Admin/AdminDashboard";
+import BookingForm from "./component/Admin/BookingForm";
+import Login from "./component/Admin/Login";
+import UserSide from "./component/Admin/UserSide";
+import SeatLayout from "./component/Admin/SeatLayout";
+import SlepperBooking  from "./component/Admin/SleeperPage/SlepperBooking";
+import Sleeper  from "./component/Admin/SleeperPage/Sleeper";
+import SlepperUser  from "./component/Admin/SleeperPage/SlepperUser";
+import SeaterUser  from "./component/Admin/SleeperPage/SlepperUser";
 const App = () => {
   return (
     <Router>
@@ -39,6 +47,16 @@ const App = () => {
           <Route path="/kumbh-mela" element={<MahakumbhJourney/>} />
           <Route path="/keral" element={<KeralaTours/>} />
           <Route path="/lonavala" element={<LonavalaTour/>} />
+            <Route path="/admindashboard" element={<AdminDashboard />} />
+            <Route path="/bookingform" element={<BookingForm />} />
+          <Route path="/login" element={<Login />} />
+         <Route path="/userside" element={<UserSide /> }/>
+         <Route path="/seatlayout" element={<SeatLayout /> }/>
+         <Route path="/slepperbooking" element={<SlepperBooking /> }/>
+         <Route path="/sleeper" element={<Sleeper /> }/>
+         <Route path="/slepperuser" element={<SlepperUser /> }/>
+         <Route path="/seateruser" element={<SeaterUser /> }/>
+       
 
         </Routes>
 

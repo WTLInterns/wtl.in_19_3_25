@@ -26,7 +26,7 @@ const NavBar = () => {
           />
         </Link>
         <div className="navbar-center">
-          <span className="navbar-title">Festive Journey</span>
+          {/* <span className="navbar-title">Festive Journey</span> */}
         </div>
         <button
           className="navbar-toggler"
@@ -57,13 +57,13 @@ const NavBar = () => {
                 <div className="mega-menu-content">
                   <div className="mega-menu-column">
                     <h3>Tirth Yatra</h3>
-                    <Link
+                    {/* <Link
                       className="mega-menu-item"
                       to="/kumbh-mela"
                       onClick={closeHolidaysMenu}
                     >
                       Kumbh Mela
-                    </Link>
+                    </Link> */}
                     <Link
                       className="mega-menu-item"
                       to="/ashtavinayak"
@@ -160,6 +160,20 @@ const NavBar = () => {
               onClick={closeHolidaysMenu}
             >
               Contact
+            </Link>
+            <Link
+              className="userside"
+              to="/userside"
+              onClick={closeHolidaysMenu}
+            >
+              Book Seats
+            </Link>
+            <Link
+              className="nav-item nav-link"
+              to="/login"
+              onClick={closeHolidaysMenu}
+            >
+              Login
             </Link>
           </div>
         </div>

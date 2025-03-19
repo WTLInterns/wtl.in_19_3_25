@@ -7,6 +7,7 @@
   background-color: #f8f9fa;
 }
 
+
 /* Container to make form overlay carousel */
 .carousel-container {
   position: relative;
@@ -26,7 +27,7 @@
 
 .carousel-inner {
   width: 100%;
-  height: 800px; /* Set a fixed height for uniformity */
+  height: 800px; 
 }
 
 .carousel-item img {
@@ -56,9 +57,9 @@
 /* Form Styling */
 .enquiry-form h2 {
   text-align: center;
-  margin-bottom: 15px;
+  margin-top: 70px;
   display: flex;
-  color: white;
+  color: #F2EFE7;
   font-weight: 500;
 }
 
@@ -74,7 +75,7 @@
   display: flex;
   flex-direction: column;
   font-weight: 600;
-  color: lightgray; /* Blue color for labels */
+  color: #2A3335; 
 }
 
 .input-group input {
@@ -123,21 +124,23 @@
 
 .tour-cards {
   display: flex;
+ 
   justify-content: space-around;
   gap: 20px;
   flex-wrap: wrap;
 }
 
 .tour-card {
-  background-color: #fff;
+  /* background-color: #fff;
   border: 1px solid #ddd;
+  
   border-radius: 8px;
   width: 250px;
   height: auto;
   padding: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  /* overflow: hidden; */
+  overflow: hidden; */
 }
 
 .tour-card:hover {
@@ -146,21 +149,21 @@
 
 .tour-card img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .tour-card h3 {
   font-size: 1em;
-  margin-top: 15px;
+  margin-top: 40px;
   color: #333;
 }
 
 .tour-card p {
   font-size: 15px;
   color: #666;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .tour-card button {
@@ -241,15 +244,21 @@
     width: 100%;
   } */
   .carousel-inner {
-    height: 100vh !important;
-    min-height: 400px;
+    height: 90vh !important;
+    min-height: 200px;
     min-width: 700px;
-    
-  }
+    }
+    @media (max-width:  430px){
+      .carousel-inner {
+        height: 80vh !important;
+        min-height: 200px;
+        min-width: 700px;
+        }
+    }
 
   .carousel-item img {
-    /* height: 100% !important; */
-    min-height: 700px;
+/*     
+    min-height: 700px; */
     width: 100% ;
     min-width: 600px;
    

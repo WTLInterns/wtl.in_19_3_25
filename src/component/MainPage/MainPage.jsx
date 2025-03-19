@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import "./MainPage.css";
 import { useNavigate } from "react-router-dom";
 
-import slide1 from "/src/assets/Images/kumbh.jpg";
-import slide2 from "/src/assets/Images/Ashtavinayak1.jpg";
+import slide1 from "../../assets/Images/happy (1).png";
+import slide2 from "/src/assets/Images/ashtvinayak_yatra_main.jpg";
 import slide3 from "/src/assets/Images/main1.png";
 import slide4 from "/src/assets/Images/Goa.png";
 import slide5 from "/src/assets/Images/Kokan.png";
@@ -93,13 +93,14 @@ const MainPage = () => {
         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-interval="1000">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img className="d-block w-100" src={slide1} alt="First slide" />
+            <img className="d-block w-100" style={{ height: "900px" }} src={slide1} alt="First slide" />
+
             </div>
             {/* <div className="carousel-item">
               <img className="d-block w-100" src={slide2} alt="Second slide" />
             </div> */}
             <div className="carousel-item">
-              <img className="d-block w-100" src={slide3} alt="Third slide" />
+              <img className="d-block w-100 " style={{ height: "900px" }} src={slide3} alt="Third slide" />
             </div>
             {/* <div className="carousel-item">
               <img className="d-block w-100" src={slide4} alt="Fourth slide" />
@@ -140,13 +141,13 @@ const MainPage = () => {
         <div className="tour-cards">
 
 
-          {/* Mahakumbh Journey Card */}
-          <div className="tour-card">
+          {/* Mahakumbh Journey Card  */}
+          {/* <div className="tour-card">
             <img src={slide1} alt="Mahakumbh" />
             <h3>Mahakumbh Journey</h3>
             <p>Join the grand Kumbh Mela for a spiritual journey of a lifetime.</p>
             <button onClick={() => navigate("/kumbh-mela")}>Learn More</button>
-          </div>
+          </div> */}
 
           {/* Ashtavinayak Tour Card */}
           <div className="tour-card">
