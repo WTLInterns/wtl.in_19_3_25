@@ -59,7 +59,7 @@
   text-align: center;
   margin-top: 70px;
   display: flex;
-  color: #F2EFE7;
+  color: #10375C;
   font-weight: 500;
 }
 
@@ -76,6 +76,7 @@
   flex-direction: column;
   font-weight: 600;
   color: #2A3335; 
+ 
 }
 
 .input-group input {
@@ -84,7 +85,7 @@
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.3); /* Slightly transparent input fields */
+  background: #FDFBEE; /* Slightly transparent input fields */
   color: black;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -110,6 +111,7 @@
 /* Tour Cards Section */
 .tour-cards-container {
   padding: 20px 0;
+  margin-top: 20px;
   text-align: center;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -266,7 +268,7 @@
     display: block !important;
   }
   .enquiry-form h2{
-    color: #463f3f;
+    color: #10375C;
     align-items: left;
     font-size: 30px;
   }
@@ -288,6 +290,7 @@
 
   .enquiry-form button {
     height: 40px;
+    margin-bottom: 50px;
     font-size: 0.9em;
   }
 }

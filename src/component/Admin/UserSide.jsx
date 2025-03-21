@@ -222,8 +222,8 @@
 
 
 import { useState } from "react";
-import BookingForm from "./SeaterUser";
-import AdminDashboard from "./SleeperPage/SlepperUser";
+import BookingForm from "./BookingForm";
+import Sleeper from "./SleeperPage/Sleeper";
 import "./SeatLayout.css"; // External CSS file for styling
 
 const SeatLayout = () => {
@@ -231,24 +231,24 @@ const SeatLayout = () => {
   
   return (
     <div className="app-containers">
-      <h1>Bus Booking System</h1>
+      <h1>Booked Your Bus</h1>
       <div className="button-container">
         <button
           className={`view-button ${view === "user" ? "active" : ""}`}
           onClick={() => setView("user")}
         >
-          Ashtavinayak
+         Seater Bus
         </button>
         <button
           className={`view-button ${view === "admin" ? "active" : ""}`}
           onClick={() => setView("admin")}
         >
-          View
+         Sleeper Bus
         </button>
       </div>
 
       <div className="view-container">
-        {view === "user" ? <BookingForm /> : <AdminDashboard />}
+        {view === "user" ? <BookingForm /> : <Sleeper />}
       </div>
     </div>
   );

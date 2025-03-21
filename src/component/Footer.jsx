@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section logo-section">
-          <img src={logo} alt="Company Logo" className="company-logo" />
+          <img src={logo} alt="Company-Logo" className="company-logo" />
           <p className="company-description">
             At WTL Tourism Private Limited, we specialize in providing seamless,
             reliable, and efficient corporate and rental cab service across
@@ -22,7 +22,13 @@ const Footer = () => {
           <span className="section-title">Explore</span>
           <ul className="animated-list">
             <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/login">Login</Link><br/><br/>
+            <Link to="/about">About Us</Link> <br/><br/>
+            <Link to="/ashtavinayak">Ashtavinayak</Link> <br/><br/>
+           
+            <Link to="/userside">Book Seats</Link><br/><br/>
+            
+            <Link to="/contact">Contact Us</Link><br/><br/>
             </li>
           </ul>
         </div>
@@ -31,7 +37,11 @@ const Footer = () => {
           <span className="section-title">Quick Links</span>
           <ul className="animated-list">
             <li>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/goa">Goa</Link> <br/><br/>
+            <Link to="/kokan">Kokan</Link><br/><br/>
+            <Link to="/mahabaleshwar">Mahabaleshwar</Link><br/><br/>
+            <Link to="/keral">Keral</Link><br/><br/>
+            <Link to="/lonavala">Lonavala</Link><br/><br/>
             </li>
           </ul>
         </div>

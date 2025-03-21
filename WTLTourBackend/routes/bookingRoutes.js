@@ -1,16 +1,20 @@
 /* eslint-disable no-undef */
-const express = require('express');
-const router = express.Router();
-const { createBooking, getBookings, deleteBooking } = require('../controllers/bookingController');
+const express = require("express")
+const router = express.Router()
+const { createBooking, getBookings, deleteBooking, acceptBooking } = require("../controllers/bookingController")
 
 // Route to create a booking
-router.post('/book', createBooking);
+router.post("/book", createBooking)
 
 // Route to get all bookings
-router.get('/', getBookings);
+router.get("/", getBookings)
 
-// Route to delete booking
-router.delete("/delete/:id", deleteBooking);
+// Route to accept booking
+router.put("/accept/:id", acceptBooking)
+
+// Route to cancel booking
+router.delete("/delete/:id", deleteBooking)
 
 // eslint-disable-next-line no-undef
-module.exports = router;
+module.exports = router
+

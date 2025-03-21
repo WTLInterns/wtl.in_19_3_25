@@ -86,8 +86,7 @@
 
 
 
-
-const mongoose = require("mongoose");
+const mongoose = require("mongoose")
 
 const bookingSchema = mongoose.Schema(
   {
@@ -117,10 +116,16 @@ const bookingSchema = mongoose.Schema(
       type: [String], // Changed from [Number] to [String] to match frontend seat IDs
       required: true,
     },
+    status: {
+      type: String,
+      enum: ["pending", "accepted", "cancelled"],
+      default: "pending",
+    },
   },
   {
     timestamps: true,
-  }
-);
+  },
+)
 
-module.exports = mongoose.model("Booking", bookingSchema);
+module.exports = mongoose.model("Booking", bookingSchema)
+

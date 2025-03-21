@@ -262,3 +262,31 @@ h1 {
     font-size: 0.4rem; /* Smaller text */
   }
 }
+
+
+@media (max-width: 360px) {
+  .icons {
+    margin-left: auto; /* Center the icon */
+    margin-right: 220px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  .seats-container,
+  .seats-container-ul {
+    display: grid;
+    grid-template-columns: repeat(6, 2fr); /* Reduce to 3 columns */
+    gap: 4px; 
+    margin-left: auto; /* Center the icon */
+    margin-right: 30px;
+    justify-content: center;
+  }
+
+
+  .seat {
+    width: 35px; /* Reduce seat size */
+    height: 20px;
+    font-size: 0.4rem; /* Smaller text */
+  }
+}

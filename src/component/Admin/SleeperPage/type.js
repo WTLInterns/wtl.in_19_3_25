@@ -1,6 +1,6 @@
-export interface SeatType {
-    id: string
-    deck: "Upper" | "Lower"
-  }
+// export interface SeatType {
+//     id: string
+//     deck: "Upper" | "Lower"
+//   }
   
   

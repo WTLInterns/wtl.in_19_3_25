@@ -41,14 +41,19 @@
   min-width: 180px; /* Reduced min-width */
   margin-bottom: 1.5rem; /* Reduced margin */
   animation: fadeIn 0.5s ease-out;
+  
 }
+.footer-section ul li{
 
+
+}
 .logo-section {
   flex: 2;
 }
 
 .company-logo {
-  max-width: 120px; /* Reduced logo size */
+  max-width: 120px; 
+  margin-right:100px;
   height: auto;
   margin-bottom: 0.8rem;
   transition: transform var(--animation-speed) ease;
@@ -60,7 +65,7 @@
 
 .company-description {
   margin-bottom: 0.8rem;
-  max-width: 300px; /* Slightly reduced max-width */
+  max-width: 300px; 
   line-height: 1.5;
 }
 
@@ -97,7 +102,11 @@
 .animated-list li {
   margin-bottom: 0.4rem; /* Reduced margin */
   transition: transform var(--animation-speed) ease;
+  margin-bottom: 10px;
+  
+  
 }
+
 
 .animated-list li:hover {
   transform: translateX(3px);
@@ -134,7 +143,7 @@
 }
 
 .contact-item {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   margin-bottom: 0.4rem;
 }
@@ -228,6 +237,13 @@
   .contact-item a,
   .contact-item span {
     font-size: 0.9rem;
+  }
+  .company-logo {
+    max-width: 120px; 
+    margin-right:0px;
+    height: auto;
+    margin-bottom: 0.8rem;
+    transition: transform var(--animation-speed) ease;
   }
 
 }

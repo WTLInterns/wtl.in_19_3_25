@@ -399,7 +399,7 @@ const UserView = () => {
 
   return (
     <div className="booking-containers">
-      <h1>Bus Ticket Booking</h1>
+      <h1> Ashtavinayak Bus Ticket Booking</h1>
 
       {isMobileView && (
         <div className="mobile-tabs">
